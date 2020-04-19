@@ -2,26 +2,29 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(
-  MaterialApp(home: Home()),
+  MaterialApp(
+      title: "Weather App",
+      home: Home()),
 );
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Water-Monitor'),
-        centerTitle: true,
-        backgroundColor: Colors.indigo,
-      ),
-      body: Container(
-          color: Colors.limeAccent[500]
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text('+'),
-        backgroundColor: Colors.indigo,
-      ),
+      body:Column(
+        children: <Widget>[
+          Container(
+            height: MediaQuery.of(context).size.height/3,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.indigo,
+          )
+        ],
+      )
     );
   }
 }
