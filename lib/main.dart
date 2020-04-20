@@ -19,9 +19,43 @@ class _HomeState extends State<Home> {
       body:Column(
         children: <Widget>[
           Container(
-            height: MediaQuery.of(context).size.height/3,
+            height: MediaQuery.of(context).size.height/4,
             width: MediaQuery.of(context).size.width,
             color: Colors.indigo,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Padding(padding: EdgeInsets.only(bottom: 10.0),
+                child: Text(
+                    "Currently in Colombo",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                ),
+                Text(
+                  "52\u00B0",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.w600
+                  ),
+                ),
+                Padding(padding: EdgeInsets.only(top: 10.0),
+                  child: Text(
+                    "Rain",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           )
         ],
       )
