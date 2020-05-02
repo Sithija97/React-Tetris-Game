@@ -8,6 +8,6 @@ import 'Home.dart';
 void main() => runApp(
   MaterialApp(
       title: "Weather App",
-      home: Home()),
+      home: Basics()),
 );
 
