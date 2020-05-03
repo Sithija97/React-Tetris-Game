@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:weather/second.dart';
 
 class Basics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    void navigate(){
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>Second()));//stack-navigator
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Fluter Basics",
@@ -12,8 +18,16 @@ class Basics extends StatelessWidget {
       ),
       body: Container(
         child:Center(
-          child: Text("Sithija Shehara"),
-        )
+          child: Column(
+            children: <Widget>[
+              Text('Home screen'),
+              FlatButton(
+                onPressed: navigate, 
+                child: Text('next')
+                )
+            ]
+          )
+        ),
       ),
     );
   }

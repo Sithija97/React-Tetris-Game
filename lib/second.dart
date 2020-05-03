@@ -5,17 +5,19 @@ class Second extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: () {}),//drawerIcon
+        //leading: IconButton(icon: Icon(Icons.menu), onPressed: () {}),//drawerIcon
         title: Text("Fluter Basics",
         style: TextStyle(color: Color(4278190080))),
         centerTitle: true,
         backgroundColor: Colors.indigoAccent,
       ),
       body:Container(
-        child:Center(
-          child: Text("Second Screen"),
-        )
-      )
+          child: Column(
+            children: <Widget>[
+              Text('second screen'),
+            ]
+          )
+        ) 
     );
   }
 }
