@@ -1,31 +1,44 @@
 import React from "react";
-import Header from "../screencomponents/homecomponent/header";
-import IntroHero from "../screencomponents/homecomponent/Introhero";
-import AboutUs from "../screencomponents/homecomponent/Aboutus";
-import Services from "../screencomponents/homecomponent/Service";
-import Reason from "../screencomponents/homecomponent/Reason";
-import Portfolio from "../screencomponents/homecomponent/Portfolio";
-import Testimonial from "../screencomponents/homecomponent/Testimonial";
-import Team from "../screencomponents/homecomponent/Team";
-import Clients from "../screencomponents/homecomponent/Client";
-import Contactus from "../screencomponents/homecomponent/Contact";
-import Footer from "../screencomponents/homecomponent/footer";
+import Header from "../homeComponents/Header";
+import Reason from "../homeComponents/Reason";
+import Services from "../homeComponents/Service";
+import IntroHero from "../homeComponents/Introhero";
+import AboutUs from "../homeComponents/Aboutus";
+import Portfolio from "../homeComponents/Portfolio";
+import Team from "../homeComponents/Team";
+import Clients from "../homeComponents/Client";
+import Contacts from "../homeComponents/Contact";
+import Testimonial from "../homeComponents/Testimonial";
+import Footer from "../homeComponents/Footer";
 
 function Home() {
   return (
     <>
-    <Header/>,
-    <IntroHero/>,
-    <AboutUs/>,
-    <Services/>,
-    <Reason/>,
-    <Portfolio/>,
-    <Testimonial/>,
-    <Team/>,
-    <Clients/>,
-    <Contactus/>,
-    <Footer/>
-   
+      <Header />,
+      <IntroHero />,
+      <AboutUs />,
+      <section id="services" className="section-bg">
+        <Services />
+      </section>
+      <section id="why-us">
+        <Reason />
+      </section>
+      <section id="portfolio" className="clearfix">
+        <Portfolio />
+      </section>
+      <section id="testimonials" className="section-bg">
+        <Testimonial />
+      </section>
+      <section id="team">
+        <Team />
+      </section>
+      <section id="clients" className="section-bg">
+        <Clients />
+      </section>
+      <section id="contact">
+        <Contacts />
+      </section>
+      <Footer />
       <a
         href="#"
         class="back-to-top d-flex align-items-center justify-content-center"
