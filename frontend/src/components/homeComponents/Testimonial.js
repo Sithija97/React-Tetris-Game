@@ -1,4 +1,6 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 function Testimonial() {
   return (
@@ -8,14 +10,21 @@ function Testimonial() {
           <h3>Testimonials</h3>
         </header>
 
-        <div className="row justify-content-center">
-          <div className="col-lg-8">
-            <div
-              className="testimonials-slider swiper-container"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="swiper-wrapper">
+        <div className="col-lg-10">
+          <div className="section-header2">
+          
+        <Carousel
+        autoPlay = {true}
+        infiniteLoop = {true}
+        interval = {3000}
+        showArrows = {false}
+        showStatus = {false}
+        showIndicators = {false}
+        showThumbs = {false}
+
+        className="row justify-content-center">
+        
+
                 <div className="swiper-slide">
                   <div className="testimonial-item">
                     <img
@@ -86,6 +95,7 @@ function Testimonial() {
                     </p>
                   </div>
                 </div>
+
                 <div className="swiper-slide">
                   <div className="testimonial-item">
                     <img
@@ -103,6 +113,22 @@ function Testimonial() {
                     </p>
                   </div>
                 </div>
+
+
+            
+            </Carousel>
+            </div>
+            </div>
+
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div
+              className="testimonials-slider swiper-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="swiper-wrapper">
+                
               </div>
               <div className="swiper-pagination"></div>
             </div>

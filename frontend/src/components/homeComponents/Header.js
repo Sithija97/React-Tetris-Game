@@ -86,8 +86,51 @@ function Header() {
                 </a>
               </li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
+            {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
           </nav>
+          
+
+<li className="nav-item dropdown no-arrow">
+  <a
+    className="nav-link dropdown-toggle"
+    href="#"
+    id="userDropdown"
+    role="button"
+    data-toggle="dropdown"
+    // aria-haspopup="true"
+    // aria-expanded="false"
+  >
+    <i className="bi bi-list mobile-nav-toggle"></i>
+  </a>
+
+  <div
+    className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+    aria-labelledby="userDropdown"
+  >
+    <a className="dropdown-item" href="#hero">
+      <i className="fa-fw mr-2 text-gray-400"></i>
+      Profile
+    </a>
+    <a className="dropdown-item" href="#about">
+      <i className="fa-fw mr-2 text-gray-400"></i>
+      About
+    </a>
+    <a className="dropdown-item" href="#services">
+      <i className="fa-fw mr-2 text-gray-400"></i>
+      Services
+    </a>
+    <a className="dropdown-item" href="#portfolio">
+      <i className="fa-fw mr-2 text-gray-400"></i>
+      Portfolio
+    </a>
+    <a className="dropdown-item" href="#team">
+      <i className="fa-fw mr-2 text-gray-400"></i>
+      Team
+    </a>
+
+  </div>
+</li>
+
         </div>
       </header>
 
