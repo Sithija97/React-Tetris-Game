@@ -10,11 +10,15 @@ import Clients from "../homeComponents/Client";
 import Contacts from "../homeComponents/Contact";
 import Testimonial from "../homeComponents/Testimonial";
 import Footer from "../homeComponents/Footer";
+import IntroVideo from "../homeComponents/IntroVideo";
 
 function Home() {
   return (
     <>
       <Header />,
+      <section id="video" className="clearfix">
+        <IntroVideo />
+      </section>
       <IntroHero />,
       <AboutUs />,
       <section id="services" className="section-bg">
@@ -41,9 +45,9 @@ function Home() {
       <Footer />
       <a
         href="#"
-        class="back-to-top d-flex align-items-center justify-content-center"
+        className="back-to-top d-flex align-items-center justify-content-center"
       >
-        <i class="bi bi-arrow-up-short"></i>
+        <i className="bi bi-arrow-up-short"></i>
       </a>
     </>
   );
