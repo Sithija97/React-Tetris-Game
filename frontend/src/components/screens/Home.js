@@ -10,11 +10,15 @@ import Clients from "../homeComponents/Client";
 import Contacts from "../homeComponents/Contact";
 import Testimonial from "../homeComponents/Testimonial";
 import Footer from "../homeComponents/Footer";
+import IntroVideo from "../homeComponents/IntroVideo";
 
 function Home() {
   return (
     <>
       <Header />,
+      <section id="video" className="clearfix">
+        <IntroVideo />
+      </section>
       <IntroHero />,
       <AboutUs />,
       <section id="services" className="section-bg">
