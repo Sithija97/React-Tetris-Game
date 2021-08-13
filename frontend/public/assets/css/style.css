@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 70px;
   z-index: 997;
   transition: all 0.5s;
   background: #fff;
@@ -107,8 +107,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  padding: 0;
+  /* padding: 0; */
+  margin-top:15px;
   max-height: 26px;
+
 }
 
 /*--------------------------------------------------------------
@@ -143,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #004289;
   font-weight: 500;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar a i, .navbar a:focus i {
@@ -951,6 +953,17 @@ section {
 
 #testimonials .section-header {
   margin-bottom: 40px;
+}
+
+#testimonials .section-header2 {
+  margin-left: 80px;
+}
+
+
+@media (max-width: 767px) {
+  #testimonials .section-header2  {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 767px) {
