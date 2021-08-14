@@ -22,23 +22,23 @@ function Home() {
       </section>
       <IntroHero />,
       <AboutUs />,
-      <section id="pricing" className="clearfix">
-        <PricingTable />
+      <section id="team">
+        <Team />
       </section>
       <section id="services" className="section-bg">
         <Services />
       </section>
+      <section id="pricing" className="clearfix">
+        <PricingTable />
+      </section>
       <section id="why-us">
         <Reason />
-      </section>
-      <section id="portfolio" className="clearfix">
-        <Portfolio />
       </section>
       <section id="testimonials" className="section-bg">
         <Testimonial />
       </section>
-      <section id="team">
-        <Team />
+      <section id="portfolio" className="clearfix">
+        <Portfolio />
       </section>
       <section id="clients" className="section-bg">
         <Clients />
