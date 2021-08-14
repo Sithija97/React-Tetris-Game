@@ -4,12 +4,17 @@ function NavBar() {
   return (
     <>
       <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-        <button
+        {/* <button
           id="sidebarToggleTop"
           class="btn btn-link d-md-none rounded-circle mr-3"
         >
           <i class="fa fa-bars"></i>
-        </button>
+        </button> */}
+
+
+       
+
+
 
         <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
           <div class="input-group">
@@ -146,6 +151,7 @@ function NavBar() {
               class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
               aria-labelledby="messagesDropdown"
             >
+               <div  id="padset" className="padset" >
               <h6 class="dropdown-header">Message Center</h6>
               <a class="dropdown-item d-flex align-items-center" href="#">
                 <div class="dropdown-list-image mr-3">
@@ -220,6 +226,7 @@ function NavBar() {
                 Read More Messages
               </a>
             </div>
+            </div>
           </li>
 
           <div class="topbar-divider d-none d-sm-block"></div>
@@ -244,19 +251,20 @@ function NavBar() {
             </a>
 
             <div
-              class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              class="dropdown-menu dropdown-menu-right shadow animated--grow-in "
               aria-labelledby="userDropdown"
             >
+              <div  id="padset" className="padset" >
               <a class="dropdown-item" href="#">
-                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-400"></i>
                 Profile
               </a>
               <a class="dropdown-item" href="#">
-                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-400"></i>
                 Settings
               </a>
               <a class="dropdown-item" href="#">
-                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-400"></i>
                 Activity Log
               </a>
               <div class="dropdown-divider"></div>
@@ -269,9 +277,58 @@ function NavBar() {
                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                 Logout
               </a>
+              </div>
             </div>
           </li>
         </ul>
+        <div>
+           <div className="nav-item dropdown no-arrow">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              id="userDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i className="bi bi-list mobile-nav-toggle"></i>
+            </a>
+
+            <div
+              className="dropdown-menu dropdown-menu-right"
+              aria-labelledby="userDropdown"
+            >
+              <div  id="padset" className="padset" >
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-400"></i>
+                Profile
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-400"></i>
+                Components
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-400"></i>
+               Utilities
+              </a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="modal"
+                data-target="#logoutModal"
+              >
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                Logout
+              </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
       </nav>
     </>
   );
