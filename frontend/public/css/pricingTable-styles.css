@@ -25,7 +25,7 @@ body {
   left: 0;
   width: 0%;
   height: 5px;
-  background-color: #57e2b2;
+  background-color: #fbfcfd;
   transition: 0.5s;
 }
 .card:hover {

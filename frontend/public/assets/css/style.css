@@ -85,7 +85,12 @@ h6 {
   height: 70px;
   z-index: 997;
   transition: all 0.5s;
-  background: #fff;
+  background: rgb(72, 0, 172);
+  background: linear-gradient(
+    90deg,
+    rgba(72, 0, 172, 1) 0%,
+    rgba(142, 45, 255, 1) 100%
+  );
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
@@ -120,12 +125,6 @@ h6 {
   max-height: 26px;
 }
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -137,7 +136,7 @@ h6 {
 }
 
 .navbar .navleft {
-  left:200px;
+  left: 200px;
 }
 
 .navbar ul {
@@ -160,7 +159,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: #004289;
+  color: #ffffff;
   font-weight: 500;
   white-space: nowrap;
   transition: 0.3s ease-in-out;
@@ -177,7 +176,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #007bff;
+  color: #f8f8f8;
 }
 
 .navbar .dropdown ul {
@@ -426,7 +425,7 @@ h6 {
 }
 
 #hero .hero-info h2 span {
-  color: #74b5fc;
+  color: #5ce6bf;
   text-decoration: underline;
 }
 
@@ -452,8 +451,13 @@ h6 {
 }
 
 #hero .hero-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
+  background: rgb(120, 206, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 206, 215, 1) 0%,
+    rgba(92, 230, 191, 1) 100%
+  );
+  border: 2px solid #78ced7;
   color: #fff;
 }
 
@@ -468,8 +472,13 @@ h6 {
 }
 
 #hero .hero-info .btn-services:hover {
-  background: #007bff;
-  border-color: #007bff;
+  background: rgb(120, 206, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 206, 215, 1) 0%,
+    rgba(92, 230, 191, 1) 100%
+  );
+  border: 2px solid #78ced7;
   color: #fff;
 }
 
@@ -511,16 +520,13 @@ section {
   background: #ecf5ff;
 }
 
-
 /*--------------------------------------------------------------
 # leftalign
 --------------------------------------------------------------*/
 .leftalign {
-  position:relative;
+  position: relative;
   left: 350px;
-
 }
-
 
 /*--------------------------------------------------------------
 # padset
@@ -528,7 +534,6 @@ section {
 .padset {
   margin: 10px 30px 10px 10px;
   transition: 0.3s ease-in-out;
-
 }
 
 /*--------------------------------------------------------------
