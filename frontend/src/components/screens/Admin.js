@@ -12,7 +12,7 @@ function Admin() {
           <Slider />
           <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
-              {/* <NavBar /> */}
+              <NavBar />
               <div class="container-fluid">
                 <CardsSection />
                 {/*start */}

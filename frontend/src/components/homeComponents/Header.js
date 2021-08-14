@@ -11,7 +11,10 @@ function Header() {
             </a>
           </div>
 
-          <nav id="navbar" className="navbar">
+<div id="leftalign" className="leftalign" >
+  
+
+        <nav id="navbar" className="navbar">
             <ul>
               <li>
                 <a className="nav-link scrollto active" href="#hero">
@@ -88,7 +91,7 @@ function Header() {
             </ul>
             {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
           </nav>
-
+          </div>
 
           <div className="nav-item dropdown no-arrow">
             <a
@@ -104,7 +107,7 @@ function Header() {
             </a>
 
             <div
-              className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              className="dropdown-menu dropdown-menu-right"
               aria-labelledby="userDropdown"
             >
               <a className="dropdown-item" href="#hero">
