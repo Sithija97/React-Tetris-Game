@@ -367,20 +367,20 @@ h6 {
 #hero {
   width: 100%;
   position: relative;
-  background: url("../img/hero-bg.png") center bottom no-repeat;
+  background: url("../img/hero-bg-min.png") center bottom no-repeat;
   background-size: cover;
-  padding: 200px 0 200px 0;
+  padding: 200px 0 280px 0;
 }
 
 @media (max-width: 991px) {
   #hero {
-    padding: 140px 0 140px 0;
+    padding: 140px 0 220px 0;
   }
 }
 
 @media (max-width: 574px) {
   #hero {
-    padding: 100px 0 120px 0;
+    padding: 100px 0 200px 0;
   }
 }
 
@@ -536,14 +536,13 @@ section {
   transition: 0.3s ease-in-out;
 }
 
-
 /*--------------------------------------------------------------
 # Video Responsive
 --------------------------------------------------------------*/
 
 .player-wrapper {
   position: relative;
-  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
 }
 
 .react-player {
