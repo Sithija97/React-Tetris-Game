@@ -369,18 +369,18 @@ h6 {
   position: relative;
   background: url("../img/hero-bg.png") center bottom no-repeat;
   background-size: cover;
-  padding: 200px 0 200px 0;
+  padding: 200px 0 280px 0;
 }
 
 @media (max-width: 991px) {
   #hero {
-    padding: 140px 0 140px 0;
+    padding: 140px 0 220px 0;
   }
 }
 
 @media (max-width: 574px) {
   #hero {
-    padding: 100px 0 120px 0;
+    padding: 100px 0 200px 0;
   }
 }
 

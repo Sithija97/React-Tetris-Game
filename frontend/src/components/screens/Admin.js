@@ -14,7 +14,7 @@ function Admin() {
             <div id="content">
               <NavBar />
               <div class="container-fluid">
-                <CardsSection />
+                {/* <CardsSection /> */}
                 {/*start */}
                 <ChartContainer />
                 {/*end */}
