@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-const DATA_COUNT = 12;
+const DATA_COUNT = 150;
 const labels = [];
 for (let i = 0; i < DATA_COUNT; ++i) {
   labels.push(i.toString());

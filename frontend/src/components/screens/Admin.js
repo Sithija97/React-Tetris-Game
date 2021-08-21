@@ -8,10 +8,10 @@ function Admin() {
   return (
     <>
       <body id="page-top">
-        <div id="wrapper">
+        <div id="wrapper" >
           <Slider />
           <div id="content-wrapper" class="d-flex flex-column">
-            <div id="content">
+            <div id="content" style={{overflow: "hidden"}}>
               <NavBar />
               <div class="container-fluid">
                 {/* <CardsSection /> */}
