@@ -388,8 +388,8 @@ function NavBar() {
           {/* </li> */}
         </ul>
         
-        <div>
-           <div className="nav-item dropdown no-arrow">
+        <div >
+        <div className="nav-item dropdown no-arrow">
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -406,7 +406,7 @@ function NavBar() {
               className="dropdown-menu dropdown-menu-right"
               aria-labelledby="userDropdown"
             >
-              <div  id="padset" className="padset" >
+              <div  id="padset" className="padset" style={{transition: "1s",left: "0"}} >
               <a class="dropdown-item" href="#">
                 <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-600"></i>
                 <span>

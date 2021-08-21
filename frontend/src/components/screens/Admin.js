@@ -17,7 +17,8 @@ function Admin() {
                 class="container-fluid"
                 style={{
                   // background: "blue",
-                  maxHeight: "44rem",
+                  // maxHeight: "44rem",
+                  height:"100vh",
                   overflow: "scroll",
                 }}
               >
