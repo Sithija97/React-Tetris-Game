@@ -20,14 +20,12 @@ function Slider() {
             <a href="index.html">
               <img src="assets/img/logo.png" alt="" className="img-fluid" />
             </a>
-
           </div>
         </a>
 
         <hr class="sidebar-divider my-0" />
 
         <ul class="navbar-nav ml-auto">
-
           <li class="nav-item dropdown no-arrow">
             <a
               class="nav-link dropdown-toggle"
@@ -38,66 +36,60 @@ function Slider() {
               aria-haspopup="true"
               aria-expanded="false"
             >
-        
-              
               {/* <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                 Keerthanan
               </span> */}
-               <div class="sidebar-brand-text mx-2">
-
-               <img
-                class="img-profile rounded-circle mr-2"
-                src="img/undraw_profile.svg"
-              /> 
-                 <span class="font-weight-bold ">
-              <text class="text-truncate">
-              Keerthanan
-              </text>
-            </span>
-            <br></br>
-            <div style={{ marginBottom:"-15px", bottom:"5px"}}>
-            {/* <span class="mx-3 pl-4">
+              <div class="sidebar-brand-text mx-2">
+                <img
+                  class="img-profile rounded-circle mr-2"
+                  src="img/undraw_profile.svg"
+                />
+                <span class="font-weight-bold ">
+                  <text class="text-truncate">Keerthanan</text>
+                </span>
+                <br></br>
+                <div style={{ marginBottom: "-15px", bottom: "5px" }}>
+                  {/* <span class="mx-3 pl-4">
               <text class="text-truncate">
               Keerthanan
               </text>
             </span> */}
-            </div>
-            </div>
-        
+                </div>
+              </div>
             </a>
 
             <div
               class="dropdown-menu dropdown-menu-right shadow animated--grow-in "
               aria-labelledby="userDropdown"
             >
-              <div  id="padset" className="padset" >
-              <a class="dropdown-item" href="#">
-                <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
-                <text class="text-gray-700" >Profile</text>                
-              </a>
-              <a class="dropdown-item" href="#">
-                <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
-                <text class="text-gray-700" >Settings</text>  
-              </a>
-              <a class="dropdown-item" href="#">
-                <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
-                <text class="text-gray-700" >Activity Log</text>  
+              <div id="padset" className="padset">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
+                  <text class="text-gray-700">Profile</text>
                 </a>
-              <div class="dropdown-divider"></div>
-              <a
-                class="dropdown-item"
-                href="#"
-                data-toggle="modal"
-                data-target="#logoutModal"
-              >
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
-                <text class="text-gray-700" >Logout</text>  
-              </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
+                  <text class="text-gray-700">Settings</text>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
+                  <text class="text-gray-700">Activity Log</text>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#logoutModal"
+                >
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
+                  <text class="text-gray-700">Logout</text>
+                </a>
               </div>
             </div>
           </li>
         </ul>
-    
+
         <hr class="sidebar-divider" />
 
         <div class="sidebar-heading">Informations</div>
@@ -114,9 +106,7 @@ function Slider() {
             <i class="fas fa-laugh-wink"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">
-                PORTFOLIO
-              </text>
+              <text class="text-truncate">PORTFOLIO</text>
             </span>
           </a>
           <div
@@ -146,14 +136,11 @@ function Slider() {
             aria-expanded="true"
             aria-controls="collapseUtilities"
           >
-      
-               <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-table"></i>
             {/* <span>INVENTORY</span> */}
 
             <span class="font-weight-bold">
-              <text class="text-truncate">
-                INVENTORY
-              </text>
+              <text class="text-truncate">INVENTORY</text>
             </span>
           </a>
           <div
@@ -174,7 +161,6 @@ function Slider() {
         <hr class="sidebar-divider" />
 
         <div class="sidebar-heading">SUMMARY</div>
-        
 
         <li class="nav-item">
           <a
@@ -188,11 +174,8 @@ function Slider() {
             <i class="fas fa-fw fa-folder"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">
-                SALES
-              </text>
+              <text class="text-truncate">SALES</text>
             </span>
-            
           </a>
           <div
             id="collapseSales"
@@ -208,7 +191,7 @@ function Slider() {
               <a class="collapse-item" href="register.html">
                 Credit Sales
               </a>
-             </div>
+            </div>
           </div>
         </li>
 
@@ -224,11 +207,8 @@ function Slider() {
             <i class="fas fa-fw fa-chart-area"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">
-              PURCHASE
-              </text>
+              <text class="text-truncate">PURCHASE</text>
             </span>
-            
           </a>
           <div
             id="collapsePurchase"
@@ -245,7 +225,7 @@ function Slider() {
                 History
               </a>
               <div class="collapse-divider"></div>
-              </div>
+            </div>
           </div>
         </li>
 
@@ -258,14 +238,11 @@ function Slider() {
             aria-expanded="true"
             aria-controls="collapseAcc"
           >
-         <i class="fas fa-donate "></i>
+            <i class="fas fa-donate "></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">
-                ACCOUNTING
-              </text>
+              <text class="text-truncate">ACCOUNTING</text>
             </span>
-            
           </a>
           <div
             id="collapseAcc"
@@ -284,7 +261,7 @@ function Slider() {
               <a class="collapse-item" href="forgot-password.html">
                 Other Reports
               </a>
-              </div>
+            </div>
           </div>
         </li>
 
@@ -297,14 +274,11 @@ function Slider() {
             aria-expanded="true"
             aria-controls="collapsestk"
           >
-           <i class="fas fa-flag"></i>
+            <i class="fas fa-flag"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">
-                STAKEHOLDERS
-              </text>
+              <text class="text-truncate">STAKEHOLDERS</text>
             </span>
-            
           </a>
           <div
             id="collapsestk"
@@ -336,14 +310,11 @@ function Slider() {
             // aria-expanded="true"
             // aria-controls="collapseProtree"
           >
-           <i class="fas fa-info-circle"></i>
+            <i class="fas fa-info-circle"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">
-                PRODUCT TREE
-              </text>
+              <text class="text-truncate">PRODUCT TREE</text>
             </span>
-            
           </a>
           <div
             id="collapseProtree"
@@ -374,36 +345,29 @@ function Slider() {
           </div>
         </li>
 
-
         <hr class="sidebar-divider d-none d-md-block" />
 
         <div class="sidebar-brand-text mx-5 pl-3 mr-4">
+          {/* <li class="nav-item "> */}
+          {/* <a class="nav-link" href="charts.html"> */}
+          {/* <i class="fas fa-fw fa-chart-area"></i> */}
+          {/* <i class="fas fa-fw fa-wrench"></i> */}
+          {/* <span class="font-weight-bold"> */}
+          {/* <text class="text-truncate">SETTINGS</text> */}
+          {/* </span> */}
+          {/* </a> */}
+          {/* </li> */}
 
-        <li class="nav-item ">
-          <a class="nav-link" href="charts.html">
-            {/* <i class="fas fa-fw fa-chart-area"></i> */}
-            <i class="fas fa-fw fa-wrench"></i>
-            <span class="font-weight-bold">
-              <text class="text-truncate">
-                SETTINGS
-              </text>
-            </span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="tables.html">
-            {/* <i class="fas fa-fw fa-table"></i> */}
-            <i class="fas fa-fw fa-cog"></i>
-            <span class="font-weight-bold">
-              <text class="text-truncate">
-                SIGN OUT
-              </text>
-            </span>
-          </a>
-        </li>
+          {/* <li class="nav-item"> */}
+          {/* <a class="nav-link" href="tables.html"> */}
+          {/* <i class="fas fa-fw fa-table"></i> */}
+          {/* <i class="fas fa-fw fa-cog"></i> */}
+          {/* <span class="font-weight-bold">
+                <text class="text-truncate">SIGN OUT</text>
+              </span> */}
+          {/* </a> */}
+          {/* </li> */}
         </div>
-
       </ul>
     </>
   );

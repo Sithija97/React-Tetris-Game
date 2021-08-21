@@ -8,16 +8,20 @@ function Admin() {
   return (
     <>
       <body id="page-top">
-        <div id="wrapper" >
+        <div id="wrapper">
           <Slider />
           <div id="content-wrapper" class="d-flex flex-column">
-            <div id="content" style={{overflow: "hidden"}}>
+            <div id="content">
               <NavBar />
-              <div class="container-fluid">
-                {/* <CardsSection /> */}
-                {/*start */}
+              <div
+                class="container-fluid"
+                style={{
+                  // background: "blue",
+                  maxHeight: "44rem",
+                  overflow: "scroll",
+                }}
+              >
                 <ChartContainer />
-                {/*end */}
               </div>
             </div>
           </div>
