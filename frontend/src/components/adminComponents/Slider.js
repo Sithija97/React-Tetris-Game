@@ -46,7 +46,7 @@ function Slider() {
                <div class="sidebar-brand-text mx-2">
 
                <img
-                class="img-profile rounded-circle"
+                class="img-profile rounded-circle mr-2"
                 src="img/undraw_profile.svg"
               /> 
                  <span class="font-weight-bold ">
@@ -106,12 +106,12 @@ function Slider() {
           <a
             class="nav-link collapsed"
             href="#"
-            data-toggle="collapse"
-            data-target="#collapseTwo"
-            aria-expanded="true"
-            aria-controls="collapseTwo"
+            // data-toggle="collapse"
+            // data-target="#collapseTwo"
+            // aria-expanded="true"
+            // aria-controls="collapseTwo"
           >
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fas fa-laugh-wink"></i>
 
             <span class="font-weight-bold">
               <text class="text-truncate">
@@ -146,7 +146,8 @@ function Slider() {
             aria-expanded="true"
             aria-controls="collapseUtilities"
           >
-            <i class="fas fa-fw fa-wrench"></i>
+      
+               <i class="fas fa-fw fa-table"></i>
             {/* <span>INVENTORY</span> */}
 
             <span class="font-weight-bold">
@@ -162,18 +163,9 @@ function Slider() {
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Custom Utilities:</h6>
+              <h6 class="collapse-header">Custom Inventories:</h6>
               <a class="collapse-item" href="utilities-color.html">
-                Colors
-              </a>
-              <a class="collapse-item" href="utilities-border.html">
-                Borders
-              </a>
-              <a class="collapse-item" href="utilities-animation.html">
-                Animations
-              </a>
-              <a class="collapse-item" href="utilities-other.html">
-                Other
+                Stocks
               </a>
             </div>
           </div>
@@ -189,9 +181,9 @@ function Slider() {
             class="nav-link collapsed"
             // href="#"
             data-toggle="collapse"
-            data-target="#collapsePages"
+            data-target="#collapseSales"
             aria-expanded="true"
-            aria-controls="collapsePages"
+            aria-controls="collapseSales"
           >
             <i class="fas fa-fw fa-folder"></i>
 
@@ -203,31 +195,20 @@ function Slider() {
             
           </a>
           <div
-            id="collapsePages"
+            id="collapseSales"
             class="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Login Screens:</h6>
+              <h6 class="collapse-header">Sales Details:</h6>
               <a class="collapse-item" href="login.html">
-                Login
+                Details
               </a>
               <a class="collapse-item" href="register.html">
-                Register
+                Credit Sales
               </a>
-              <a class="collapse-item" href="forgot-password.html">
-                Forgot Password
-              </a>
-              <div class="collapse-divider"></div>
-              <h6 class="collapse-header">Other Pages:</h6>
-              <a class="collapse-item" href="404.html">
-                404 Page
-              </a>
-              <a class="collapse-item" href="blank.html">
-                Blank Page
-              </a>
-            </div>
+             </div>
           </div>
         </li>
 
@@ -236,9 +217,9 @@ function Slider() {
             class="nav-link collapsed"
             // href="#"
             data-toggle="collapse"
-            data-target="#collapsePages"
+            data-target="#collapsePurchase"
             aria-expanded="true"
-            aria-controls="collapsePages"
+            aria-controls="collapsePurchase"
           >
             <i class="fas fa-fw fa-chart-area"></i>
 
@@ -250,29 +231,97 @@ function Slider() {
             
           </a>
           <div
-            id="collapsePages"
+            id="collapsePurchase"
             class="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Login Screens:</h6>
+              <h6 class="collapse-header">Purchase Details:</h6>
               <a class="collapse-item" href="login.html">
-                Login
+                Details
               </a>
               <a class="collapse-item" href="register.html">
-                Register
-              </a>
-              <a class="collapse-item" href="forgot-password.html">
-                Forgot Password
+                History
               </a>
               <div class="collapse-divider"></div>
-              <h6 class="collapse-header">Other Pages:</h6>
-              <a class="collapse-item" href="404.html">
-                404 Page
+              </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseAcc"
+            aria-expanded="true"
+            aria-controls="collapseAcc"
+          >
+         <i class="fas fa-donate "></i>
+
+            <span class="font-weight-bold">
+              <text class="text-truncate">
+                ACCOUNTING
+              </text>
+            </span>
+            
+          </a>
+          <div
+            id="collapseAcc"
+            class="collapse"
+            aria-labelledby="headingPages"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Accounts Details:</h6>
+              <a class="collapse-item" href="login.html">
+                Sales
               </a>
-              <a class="collapse-item" href="blank.html">
-                Blank Page
+              <a class="collapse-item" href="register.html">
+                Purchase
+              </a>
+              <a class="collapse-item" href="forgot-password.html">
+                Other Reports
+              </a>
+              </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapsestk"
+            aria-expanded="true"
+            aria-controls="collapsestk"
+          >
+           <i class="fas fa-flag"></i>
+
+            <span class="font-weight-bold">
+              <text class="text-truncate">
+                STAKEHOLDERS
+              </text>
+            </span>
+            
+          </a>
+          <div
+            id="collapsestk"
+            class="collapse"
+            aria-labelledby="headingPages"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Monitize Informations:</h6>
+              <a class="collapse-item" href="login.html">
+                Suppliers
+              </a>
+              <a class="collapse-item" href="register.html">
+                Customers
+              </a>
+              <a class="collapse-item" href="forgot-password.html">
+                Collaborators
               </a>
             </div>
           </div>
@@ -282,22 +331,22 @@ function Slider() {
           <a
             class="nav-link collapsed"
             href="#"
-            data-toggle="collapse"
-            data-target="#collapsePages"
-            aria-expanded="true"
-            aria-controls="collapsePages"
+            // data-toggle="collapse"
+            // data-target="#collapseProtree"
+            // aria-expanded="true"
+            // aria-controls="collapseProtree"
           >
-           <i class="fas fa-fw fa-table"></i>
+           <i class="fas fa-info-circle"></i>
 
             <span class="font-weight-bold">
               <text class="text-truncate">
-                REPORTS
+                PRODUCT TREE
               </text>
             </span>
             
           </a>
           <div
-            id="collapsePages"
+            id="collapseProtree"
             class="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
@@ -325,13 +374,15 @@ function Slider() {
           </div>
         </li>
 
+
         <hr class="sidebar-divider d-none d-md-block" />
 
-        <div class="sidebar-brand-text mx-5 pl-5 mr-4">
+        <div class="sidebar-brand-text mx-5 pl-3 mr-4">
 
         <li class="nav-item ">
           <a class="nav-link" href="charts.html">
             {/* <i class="fas fa-fw fa-chart-area"></i> */}
+            <i class="fas fa-fw fa-wrench"></i>
             <span class="font-weight-bold">
               <text class="text-truncate">
                 SETTINGS
@@ -343,6 +394,7 @@ function Slider() {
         <li class="nav-item">
           <a class="nav-link" href="tables.html">
             {/* <i class="fas fa-fw fa-table"></i> */}
+            <i class="fas fa-fw fa-cog"></i>
             <span class="font-weight-bold">
               <text class="text-truncate">
                 SIGN OUT

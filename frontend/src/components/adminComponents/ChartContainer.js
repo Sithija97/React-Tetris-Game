@@ -4,16 +4,17 @@ import MultiAxisLine from "./MultiAxisLine";
 function ChartContainer() {
   return (
     <>
-      <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-900 font-weight-bold">Sales Summary</h1>
+    
+      <div class="d-sm-flex align-items-center justify-content-between mb-2">
+        <h1 class="h3 mb-0 text-gray-900 font-weight-bold ">SALES SUMMARY</h1>
       </div>
       <div class="row">
         <div class="col-xl-8 col-lg-7">
           <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-              <h6 class="m-0 font-weight-bold text-primary">
+              {/* <h6 class="m-0 font-weight-bold text-primary">
                 Earnings Overview
-              </h6>
+              </h6> */}
               {/* <div class="dropdown no-arrow">
                 <a
                   class="dropdown-toggle"
@@ -45,8 +46,8 @@ function ChartContainer() {
               </div> */}
             </div>
 
-            <div class="card-body">
-              <div class="chart-area">
+            <div class="card-body pre-scrollable">
+              <div class="chart-area "  style={{ minHeight:"50px",maxHeight:"250px"}}>
                 {/* <canvas id="myAreaChart"></canvas> */}
                 <MultiAxisLine />
               </div>
@@ -57,13 +58,20 @@ function ChartContainer() {
         <div class="col-xl-4 col-lg-5">
           <div class="card shadow mb-4" style={{ background: "#5f27cd" }}>
             <div
-              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+              class="card-header py-3 justify-content-between"
               style={{ background: "#5f27cd" }}
             >
-              <h6 class="m-0 font-weight-bold text-primary text-light">
+              <h6 class="m-0 font-weight-bold text-primary text-light mb-2">
                 Today
               </h6>
-              <div class="dropdown no-arrow">
+
+              <span class="font-weight-bold">
+              <text class="text-truncate text-light h3 font-weight-bold ">
+                TOTAL SALES
+              </text>
+            </span>
+
+               {/* <div class="dropdown no-arrow">
                 <a
                   class="dropdown-toggle"
                   href="#"
@@ -91,7 +99,7 @@ function ChartContainer() {
                     Something else here
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div class="card-body">
@@ -114,7 +122,7 @@ function ChartContainer() {
         </div>
       </div>
 
-      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <div class="d-sm-flex align-items-center justify-content-between mb-2">
         <h1 class="h3 mb-0 text-gray-900 font-weight-bold">WEAK STOCK</h1>
       </div>
       <div class="row">
@@ -155,10 +163,10 @@ function ChartContainer() {
               </div>
             </div>
 
-            <div class="card-body">
-              <div class="chart-area">
+            <div class="card-body  pre-scrollable" >
+              <div class="chart-area"  style={{ minHeight:"10px",maxHeight:"300px"}}>
                 {/* <canvas id="myAreaChart"></canvas> */}
-                <div class="table-responsive">
+                <div class="table-responsive ">
                   <table class="table table-striped table-sm">
                     <thead>
                       <tr>
@@ -238,11 +246,11 @@ function ChartContainer() {
         <div class="col-xl-4 col-lg-5">
           <div
             class="card shadow mb-4 bg-indigo"
-            style={{ background: "#be2edd" }}
+            style={{ background: "#5b006f" }}
           >
             <div
               class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-              style={{ background: "#be2edd" }}
+              style={{ background: "#5b006f" }}
             >
               <h6 class="m-0 font-weight-bold text-primary text-light">
                 Revenue Sources

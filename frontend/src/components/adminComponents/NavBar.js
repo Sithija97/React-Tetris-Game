@@ -10,6 +10,7 @@ function NavBar() {
         >
           <i class="fa fa-bars"></i>
         </button> */}
+        
 
 
        
@@ -386,6 +387,7 @@ function NavBar() {
             </div> */}
           {/* </li> */}
         </ul>
+        
         <div>
            <div className="nav-item dropdown no-arrow">
             <a
