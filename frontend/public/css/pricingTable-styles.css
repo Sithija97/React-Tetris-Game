@@ -17,7 +17,7 @@ body {
   padding: 2.25rem 0;
   position: relative;
   will-change: transform;
-  height: 290px;
+  height: 350px;
 }
 .card:after {
   content: "";
