@@ -37,7 +37,7 @@ function Admin() {
         </div>
    </div>
 </body>
-      <body id="page-top  pre-scrollable">
+      <body id="page-top">
         <div id="wrapper">
           <Slider />
           <div id="content-wrapper" class="d-flex flex-column">
