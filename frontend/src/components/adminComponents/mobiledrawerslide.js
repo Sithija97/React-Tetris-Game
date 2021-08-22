@@ -3,16 +3,18 @@ import React from "react";
 function MobileleftSlider() {
   return (
     <>
-     <ul class="mr-3"> 
-         <li> <div class="mx-4 mr-5">
+      <ul class="mr-3">
+        <li>
+          {" "}
+          <div class="mx-4 mr-5">
             {/* SB Admin <sup>2</sup> */}
 
             <a href="index.html">
               <img src="assets/img/logo.png" alt="" className="img-fluid" />
             </a>
           </div>
-          </li>
-         <hr class="sidebar-divider my-0 mt-2" />
+        </li>
+        <hr class="sidebar-divider my-0 mt-2" />
         <li class="nav-item">
           <a
             class="nav-link collapsed"
@@ -22,11 +24,11 @@ function MobileleftSlider() {
             aria-expanded="true"
             aria-controls="collapseUser"
           >
-           <img
-                  class="img-profile rounded-circle mr-2"
-                  src="img/undraw_profile.svg"
-                  style={{height:"40px"}}
-                />
+            <img
+              class="img-profile rounded-circle mr-2"
+              src="img/undraw_profile.svg"
+              style={{ height: "40px" }}
+            />
 
             <span class="font-weight-bold">
               <text class="text-truncate">Keerthanan</text>
@@ -41,74 +43,72 @@ function MobileleftSlider() {
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Sales Details:</h6>
               <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Profile</text>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Settings</text>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Activity Log</text>
-                </a>
+                <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Profile</text>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Settings</text>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Activity Log</text>
+              </a>
               <div class="dropdown-divider"></div>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="#logoutModal"
-                >
-                  
-                  {/* <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="modal"
+                data-target="#logoutModal"
+              >
+                {/* <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
                   <text class="text-gray-700">Logout</text> */}
-                  
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Logout</text>
-                </a>
+
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Logout</text>
+              </a>
             </div>
           </div>
         </li>
 
-
         <hr class="sidebar-divider" />
 
-<div class="sidebar-heading">Informations</div>
+        <div class="sidebar-heading">Informations</div>
 
-<li class="nav-item">
-  <a
-    class="nav-link collapsed"
-    href="#"
-    // data-toggle="collapse"
-    // data-target="#collapseTwo"
-    // aria-expanded="true"
-    // aria-controls="collapseTwo"
-  >
-    <i class="fas fa-laugh-wink"></i>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            // data-toggle="collapse"
+            // data-target="#collapseTwo"
+            // aria-expanded="true"
+            // aria-controls="collapseTwo"
+          >
+            <i class="fas fa-laugh-wink"></i>
 
-    <span class="font-weight-bold">
-      <text class="text-truncate">PORTFOLIO</text>
-    </span>
-  </a>
-  <div
-    id="collapseTwo"
-    class="collapse"
-    aria-labelledby="headingTwo"
-    data-parent="#accordionSidebar"
-  >
-    <div class="bg-white py-2 collapse-inner rounded">
-      <h6 class="collapse-header">Custom Components:</h6>
-      <a class="collapse-item" href="buttons.html">
-        Buttons
-      </a>
-      <a class="collapse-item" href="cards.html">
-        Cards
-      </a>
-    </div>
-  </div>
-</li>
+            <span class="font-weight-bold">
+              <text class="text-truncate ml-2">PORTFOLIO</text>
+            </span>
+          </a>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="buttons.html">
+                Buttons
+              </a>
+              <a class="collapse-item" href="cards.html">
+                Cards
+              </a>
+            </div>
+          </div>
+        </li>
 
-<li class="nav-item">
+        <li class="nav-item">
           <a
             class="nav-link collapsed"
             href="#"
@@ -121,7 +121,7 @@ function MobileleftSlider() {
             {/* <span>INVENTORY</span> */}
 
             <span class="font-weight-bold">
-              <text class="text-truncate">INVENTORY</text>
+              <text class="text-truncate ml-2">INVENTORY</text>
             </span>
           </a>
           <div
@@ -132,7 +132,10 @@ function MobileleftSlider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Inventories:</h6>
-              <a class="collapse-item" href="utilities-color.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="utilities-color.html"
+              >
                 Stocks
               </a>
             </div>
@@ -155,7 +158,7 @@ function MobileleftSlider() {
             <i class="fas fa-fw fa-folder"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">SALES</text>
+              <text class="text-truncate ml-2">SALES</text>
             </span>
           </a>
           <div
@@ -166,10 +169,16 @@ function MobileleftSlider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Sales Details:</h6>
-              <a class="collapse-item" href="login.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="login.html"
+              >
                 Details
               </a>
-              <a class="collapse-item" href="register.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="register.html"
+              >
                 Credit Sales
               </a>
             </div>
@@ -188,7 +197,7 @@ function MobileleftSlider() {
             <i class="fas fa-fw fa-chart-area"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">PURCHASE</text>
+              <text class="text-truncate ml-2">PURCHASE</text>
             </span>
           </a>
           <div
@@ -199,10 +208,16 @@ function MobileleftSlider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Purchase Details:</h6>
-              <a class="collapse-item" href="login.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="login.html"
+              >
                 Details
               </a>
-              <a class="collapse-item" href="register.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="register.html"
+              >
                 History
               </a>
               <div class="collapse-divider"></div>
@@ -222,7 +237,7 @@ function MobileleftSlider() {
             <i class="fas fa-donate "></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">ACCOUNTING</text>
+              <text class="text-truncate ml-2">ACCOUNTING</text>
             </span>
           </a>
           <div
@@ -233,13 +248,22 @@ function MobileleftSlider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Accounts Details:</h6>
-              <a class="collapse-item" href="login.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="login.html"
+              >
                 Sales
               </a>
-              <a class="collapse-item" href="register.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="register.html"
+              >
                 Purchase
               </a>
-              <a class="collapse-item" href="forgot-password.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="forgot-password.html"
+              >
                 Other Reports
               </a>
             </div>
@@ -258,7 +282,7 @@ function MobileleftSlider() {
             <i class="fas fa-flag"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">STAKEHOLDERS</text>
+              <text class="text-truncate ml-2">STAKEHOLDERS</text>
             </span>
           </a>
           <div
@@ -269,13 +293,22 @@ function MobileleftSlider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Monitize Informations:</h6>
-              <a class="collapse-item" href="login.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="login.html"
+              >
                 Suppliers
               </a>
-              <a class="collapse-item" href="register.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="register.html"
+              >
                 Customers
               </a>
-              <a class="collapse-item" href="forgot-password.html">
+              <a
+                class="collapse-item font-weight-bold text-dark"
+                href="forgot-password.html"
+              >
                 Collaborators
               </a>
             </div>
@@ -294,7 +327,7 @@ function MobileleftSlider() {
             <i class="fas fa-info-circle"></i>
 
             <span class="font-weight-bold">
-              <text class="text-truncate">PRODUCT TREE</text>
+              <text class="text-truncate ml-2">PRODUCT TREE</text>
             </span>
           </a>
           <div
