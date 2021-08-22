@@ -33,10 +33,10 @@ function Slider() {
             aria-expanded="true"
             aria-controls="collapseUser"
           >
-           <img
-                  class="img-profile rounded-circle mr-2"
-                  src="img/undraw_profile.svg"
-                />
+            <img
+              class="img-profile rounded-circle mr-2"
+              src="img/undraw_profile.svg"
+            />
 
             <span class="font-weight-bold">
               <text class="text-truncate">Keerthanan</text>
@@ -51,31 +51,30 @@ function Slider() {
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Sales Details:</h6>
               <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Profile</text>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Settings</text>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Activity Log</text>
-                </a>
+                <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Profile</text>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Settings</text>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Activity Log</text>
+              </a>
               <div class="dropdown-divider"></div>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="#logoutModal"
-                >
-                  
-                  {/* <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="modal"
+                data-target="#logoutModal"
+              >
+                {/* <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
                   <text class="text-gray-700">Logout</text> */}
-                  
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Logout</text>
-                </a>
+
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text class="text-gray-700">Logout</text>
+              </a>
             </div>
           </div>
         </li>
@@ -232,10 +231,10 @@ function Slider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Sales Details:</h6>
-              <a class="collapse-item" href="login.html">
+              <a class="collapse-item font-weight-bold" href="login.html">
                 Details
               </a>
-              <a class="collapse-item" href="register.html">
+              <a class="collapse-item font-weight-bold" href="register.html">
                 Credit Sales
               </a>
             </div>
@@ -265,10 +264,10 @@ function Slider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Purchase Details:</h6>
-              <a class="collapse-item" href="login.html">
+              <a class="collapse-item font-weight-bold" href="login.html">
                 Details
               </a>
-              <a class="collapse-item" href="register.html">
+              <a class="collapse-item font-weight-bold" href="register.html">
                 History
               </a>
               <div class="collapse-divider"></div>
@@ -299,13 +298,16 @@ function Slider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Accounts Details:</h6>
-              <a class="collapse-item" href="login.html">
+              <a class="collapse-item font-weight-bold" href="login.html">
                 Sales
               </a>
-              <a class="collapse-item" href="register.html">
+              <a class="collapse-item font-weight-bold" href="register.html">
                 Purchase
               </a>
-              <a class="collapse-item" href="forgot-password.html">
+              <a
+                class="collapse-item font-weight-bold"
+                href="forgot-password.html"
+              >
                 Other Reports
               </a>
             </div>
@@ -335,13 +337,16 @@ function Slider() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Monitize Informations:</h6>
-              <a class="collapse-item" href="login.html">
+              <a class="collapse-item font-weight-bold" href="login.html">
                 Suppliers
               </a>
-              <a class="collapse-item" href="register.html">
+              <a class="collapse-item font-weight-bold" href="register.html">
                 Customers
               </a>
-              <a class="collapse-item" href="forgot-password.html">
+              <a
+                class="collapse-item font-weight-bold"
+                href="forgot-password.html"
+              >
                 Collaborators
               </a>
             </div>
@@ -394,7 +399,7 @@ function Slider() {
 
         <hr class="sidebar-divider d-none d-md-block" />
 
-         {/* <div class="sidebar-brand-text mx-5 pl-3 mr-4">
+        {/* <div class="sidebar-brand-text mx-5 pl-3 mr-4">
           <li class="nav-item ">
           <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-wrench"></i>
