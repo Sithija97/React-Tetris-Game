@@ -226,7 +226,7 @@ function ChartContainer() {
             <div class="card-body  pre-scrollable">
               <div
                 class="chart-area"
-                style={{ minHeight: "10px", maxHeight: "300px" }}
+                style={{ minHeight: "50px", maxHeight: "250px" }}
               >
                 {/* <canvas id="myAreaChart"></canvas> */}
                 <div class="table-responsive ">

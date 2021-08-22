@@ -388,7 +388,7 @@ function NavBar() {
           {/* </li> */}
         </ul>
         
-        <div >
+        {/* <div >
         <div className="nav-item dropdown no-arrow">
             <a
               className="nav-link dropdown-toggle"
@@ -453,7 +453,7 @@ function NavBar() {
             </div>
           </div>
 
-        </div>
+        </div> */}
 
       </nav>
     </>
