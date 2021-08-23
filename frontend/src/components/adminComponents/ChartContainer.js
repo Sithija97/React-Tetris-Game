@@ -85,9 +85,9 @@ function ChartContainer() {
           <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"></div>
 
-            <div class="card-body">
-              <div class="chart-area" style={{ bottom: "50px", width: "80%" }}>
-                <div class="table-responsive ">
+            <div class="card-body" style={{ overflow: "hidden" }}>
+              <div class="chart-area" style={{ bottom: "20px", width: "80%" }}>
+                <div class="table-responsive">
                   <DataTable />
                 </div>
               </div>

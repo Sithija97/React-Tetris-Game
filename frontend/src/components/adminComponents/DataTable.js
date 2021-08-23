@@ -1,41 +1,61 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { getMovies } from "../../services/fakeMovieService";
+import MockData from "../../services/MOCK_DATA.json";
 
 function DataTable() {
-  const [movies, setMovies] = useState([]);
-  const [q, setQ] = useState("");
-
-  useEffect(() => {
-    setMovies(...movies, getMovies());
-    console.log(movies);
-  }, []);
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <table class="table table-striped table-sm">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Title</th>
-          <th>Genre</th>
-          <th>Stock</th>
-          <th>Rate</th>
-          <th>test</th>
-        </tr>
-      </thead>
-      <tbody>
-        {movies.map((movie) => (
-          <tr key={movie._id}>
-            <td>{movie.title}</td>
-            <td>{movie.genre.name}</td>
-            <td>{movie.numberInStock}</td>
-            <td>{movie.dailyRentalRate}</td>
-            <td>sit</td>
-            <td>sit</td>
+    <React.Fragment>
+      <div>
+        <input
+          type="text"
+          placeholder="Search"
+          className="form-control"
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+          }}
+        />
+      </div>
+      <table className="table table-striped table-sm ">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Gender</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>{" "}
+      </table>
+      <div className="pre-scrollable">
+        <table className="table table-striped table-sm">
+          <tbody>
+            {MockData.filter((val) => {
+              if (searchTerm === "") {
+                return val;
+              } else if (
+                val.first_name
+                  .toLowerCase()
+                  .includes(searchTerm.toLowerCase()) ||
+                val.last_name
+                  .toLowerCase()
+                  .includes(searchTerm.toLowerCase()) ||
+                val.email.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return val;
+              }
+            }).map((m) => (
+              <tr key={m.id}>
+                <td>{m.first_name}</td>
+                <td>{m.last_name}</td>
+                <td>{m.email}</td>
+                <td>{m.gender}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </React.Fragment>
   );
 }
 
