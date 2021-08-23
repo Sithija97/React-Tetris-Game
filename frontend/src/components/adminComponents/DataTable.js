@@ -19,6 +19,7 @@ function DataTable() {
           <td>ipsum</td>
           <td>dolor</td>
           <td>sit</td>
+          <td>sit</td>
         </tr>
         <tr>
           <td>1,002</td>
@@ -26,6 +27,7 @@ function DataTable() {
           <td>consectetur</td>
           <td>adipiscing</td>
           <td>elit</td>
+          <td>sit</td>
         </tr>
         <tr>
           <td>1,003</td>
@@ -33,6 +35,7 @@ function DataTable() {
           <td>nec</td>
           <td>odio</td>
           <td>Praesent</td>
+          <td>nec</td>
         </tr>
         <tr>
           <td>1,003</td>
@@ -40,6 +43,7 @@ function DataTable() {
           <td>Sed</td>
           <td>cursus</td>
           <td>ante</td>
+          <td>nec</td>
         </tr>
         <tr>
           <td>1,004</td>
@@ -47,6 +51,7 @@ function DataTable() {
           <td>diam</td>
           <td>Sed</td>
           <td>nisi</td>
+          <td>nec</td>
         </tr>
 
         <tr>
@@ -55,6 +60,7 @@ function DataTable() {
           <td>ipsum</td>
           <td>Praesent</td>
           <td>mauris</td>
+          <td>nec</td>
         </tr>
         <tr>
           <td>1,008</td>
@@ -62,6 +68,7 @@ function DataTable() {
           <td>nec</td>
           <td>tellus</td>
           <td>sed</td>
+          <td>tellus</td>
         </tr>
         <tr>
           <td>1,009</td>
@@ -69,6 +76,7 @@ function DataTable() {
           <td>semper</td>
           <td>porta</td>
           <td>Mauris</td>
+          <td>tellus</td>
         </tr>
       </tbody>
     </table>
