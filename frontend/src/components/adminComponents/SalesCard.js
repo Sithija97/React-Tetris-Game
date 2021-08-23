@@ -6,19 +6,19 @@ function SalesCard({ salesProps }) {
       class="cardamount shadow mb-4"
       style={{
         background:
-          "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
+          "linear-gradient(90deg, rgb(91, 0, 111) 0%, rgb(101, 0, 112)",
       }}
     >
       <div
         class="card-header py-3 justify-content-between"
         style={{
           background:
-            "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
+            "linear-gradient(90deg, rgb(91, 0, 111) 0%, rgb(101, 0, 112)",
         }}
       >
-        <h6 class="m-0 font-weight-bold text-primary text-light mb-2">
+        <h5 class="m-0 font-weight-bold text-primary text-light mb-2">
           SALES DETAILS
-        </h6>
+        </h5>
 
         <span class="font-weight-bold">
           <div
@@ -29,7 +29,7 @@ function SalesCard({ salesProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Total Sales */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">$ CASH</div>
+              <div class=" mb-0 font-weight-bold text-light pl-4">$ Cash</div>
             </div>
             <div class="col-auto">
               <span class=" mb-0 font-weight-bold text-light">
@@ -47,7 +47,7 @@ function SalesCard({ salesProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Cash */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">$ CREDIT</div>
+              <div class=" mb-0 font-weight-bold text-light pl-4">$ Credit</div>
             </div>
             <div class="col-auto">
               <span class=" mb-0 font-weight-bold text-light">
@@ -65,7 +65,7 @@ function SalesCard({ salesProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Cash */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">$ CHECK</div>
+              <div class=" mb-0 font-weight-bold text-light pl-4">$ Check</div>
             </div>
             <div class="col-auto">
               <span class=" mb-0 font-weight-bold text-light">
@@ -83,7 +83,7 @@ function SalesCard({ salesProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Cash */}
               </div>
-              <div class="h3 mb-0 font-weight-bold text-light">$ TOTAL</div>
+              <div class="h5 mb-0 font-weight-bold text-light">$ TOTAL</div>
             </div>
             <div class="col-auto">
               <span class="h3 mb-0 font-weight-bold text-light">

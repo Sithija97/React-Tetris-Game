@@ -4,6 +4,8 @@ import { getMovies } from "../../services/fakeMovieService";
 
 function DataTable() {
   const [movies, setMovies] = useState([]);
+  const [q, setQ] = useState("");
+
   useEffect(() => {
     setMovies(...movies, getMovies());
     console.log(movies);
