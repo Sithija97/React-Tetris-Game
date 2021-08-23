@@ -6,19 +6,19 @@ function DrawerCard({ drawerProps }) {
       class="cardamount shadow mb-4"
       style={{
         background:
-          "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
+          "linear-gradient(90deg, rgb(91, 0, 111) 0%, rgb(65, 7, 135) 100%)",
       }}
     >
       <div
         class="card-header py-3 justify-content-between"
         style={{
           background:
-            "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
+            "linear-gradient(90deg, rgb(91, 0, 111) 0%, rgb(65, 7, 135) 100%)",
         }}
       >
-        <h6 class="m-0 font-weight-bold text-primary text-light mb-2">
+        <h5 class="m-0 font-weight-bold text-primary text-light mb-2">
           DRAWER DETAILS
-        </h6>
+        </h5>
 
         <span class="font-weight-bold">
           <div
@@ -29,8 +29,8 @@ function DrawerCard({ drawerProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Total Sales */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">
-                $ STARTING BALANCE
+              <div class=" mb-0 font-weight-bold text-light pl-4">
+                $ Starting Balance
               </div>
             </div>
             <div class="col-auto">
@@ -49,8 +49,8 @@ function DrawerCard({ drawerProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Cash */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">
-                $ TOTAL CASH SALES
+              <div class=" mb-0 font-weight-bold text-light pl-4">
+                $ Total Cash Sales
               </div>
             </div>
             <div class="col-auto">
@@ -69,8 +69,8 @@ function DrawerCard({ drawerProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Cash */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">
-                $ TOTAL EXPENSE BY CASH
+              <div class=" mb-0 font-weight-bold text-light pl-4">
+                $ Total Expense by Cash
               </div>
             </div>
             <div class="col-auto">

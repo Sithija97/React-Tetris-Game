@@ -16,9 +16,9 @@ function ExpenseCard({ expenseProps }) {
             "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
         }}
       >
-        <h6 class="m-0 font-weight-bold text-primary text-light mb-2">
+        <h5 class="m-0 font-weight-bold text-primary text-light mb-2">
           EXPENSE DETAILS
-        </h6>
+        </h5>
 
         <span class="font-weight-bold">
           <div
@@ -29,7 +29,7 @@ function ExpenseCard({ expenseProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Total Sales */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">$ CASH</div>
+              <div class=" mb-0 font-weight-bold text-light pl-4">$ Cash</div>
             </div>
             <div class="col-auto">
               <span class=" mb-0 font-weight-bold text-light">
@@ -47,7 +47,7 @@ function ExpenseCard({ expenseProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Cash */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">$ CREDIT</div>
+              <div class=" mb-0 font-weight-bold text-light pl-4">$ Credit</div>
             </div>
             <div class="col-auto">
               <span class=" mb-0 font-weight-bold text-light">
@@ -65,7 +65,7 @@ function ExpenseCard({ expenseProps }) {
               <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
                 {/* Cash */}
               </div>
-              <div class=" mb-0 font-weight-bold text-light">$ CHECK</div>
+              <div class=" mb-0 font-weight-bold text-light pl-4">$ Check</div>
             </div>
             <div class="col-auto">
               <span class=" mb-0 font-weight-bold text-light">

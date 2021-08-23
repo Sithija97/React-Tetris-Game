@@ -7,8 +7,6 @@ function MobileleftSlider() {
         <li>
           {" "}
           <div class="mx-4 mr-5">
-            {/* SB Admin <sup>2</sup> */}
-
             <a href="index.html">
               <img src="assets/img/logo.png" alt="" className="img-fluid" />
             </a>
@@ -61,9 +59,6 @@ function MobileleftSlider() {
                 data-toggle="modal"
                 data-target="#logoutModal"
               >
-                {/* <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
-                  <text class="text-gray-700">Logout</text> */}
-
                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
                 <text class="text-gray-700">Logout</text>
               </a>
@@ -118,7 +113,6 @@ function MobileleftSlider() {
             aria-controls="collapseUtilities"
           >
             <i class="fas fa-fw fa-table"></i>
-            {/* <span>INVENTORY</span> */}
 
             <span class="font-weight-bold">
               <text class="text-truncate ml-2">INVENTORY</text>

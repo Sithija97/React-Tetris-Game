@@ -11,15 +11,8 @@ function Slider() {
           class="sidebar-brand d-flex align-items-center justify-content-center"
           href="index.html"
         >
-          {/* <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-          </div> */}
-          <div class="sidebar-brand-text mx-4 mr-4">
-            {/* SB Admin <sup>2</sup> */}
-
-            <a href="index.html">
-              <img src="assets/img/logo.png" alt="" className="img-fluid" />
-            </a>
+          <div class="sidebar-brand-icon align-items-center justify-content-center mx-4 pr-2">
+            <img src="img/logo.png" alt="" className="img-fluid" />
           </div>
         </a>
 
@@ -69,9 +62,6 @@ function Slider() {
                 data-toggle="modal"
                 data-target="#logoutModal"
               >
-                {/* <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
-                  <text class="text-gray-700">Logout</text> */}
-
                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
                 <text class="text-gray-700">Logout</text>
               </a>
@@ -79,76 +69,12 @@ function Slider() {
           </div>
         </li>
 
-        {/* <ul class="navbar-nav ml-auto">
-          <li className="nav-item dropdown no-arrow">
-          <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              id="userDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <div class="sidebar-brand-text mx-2">
-                <img
-                  class="img-profile rounded-circle mr-2"
-                  src="img/undraw_profile.svg"
-                />
-                <span class="font-weight-bold ">
-                  <text class="text-truncate">Keerthanan</text>
-                </span>
-                <br></br>
-                <div style={{ marginBottom: "-15px", bottom: "5px" }}>
-                  </div>
-              </div>
-            </a>
-
-            <div
-              className="dropdown-menu dropdown-menu-right"
-              aria-labelledby="userDropdown"
-            >
-              <div id="padset" className="padset">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Profile</text>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Settings</text>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
-                  <text class="text-gray-700">Activity Log</text>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="#logoutModal"
-                >
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-700"></i>
-                  <text class="text-gray-700">Logout</text>
-                </a>
-              </div>
-            </div>
-          </li>
-        </ul> */}
-
         <hr class="sidebar-divider" />
 
         <div class="sidebar-heading">Informations</div>
 
         <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            href="#"
-            // data-toggle="collapse"
-            // data-target="#collapseTwo"
-            // aria-expanded="true"
-            // aria-controls="collapseTwo"
-          >
+          <a class="nav-link collapsed" href="#">
             <i class="fas fa-laugh-wink"></i>
 
             <span class="font-weight-bold">
@@ -183,7 +109,6 @@ function Slider() {
             aria-controls="collapseUtilities"
           >
             <i class="fas fa-fw fa-table"></i>
-            {/* <span>INVENTORY</span> */}
 
             <span class="font-weight-bold">
               <text class="text-truncate">INVENTORY</text>
@@ -354,14 +279,7 @@ function Slider() {
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            href="#"
-            // data-toggle="collapse"
-            // data-target="#collapseProtree"
-            // aria-expanded="true"
-            // aria-controls="collapseProtree"
-          >
+          <a class="nav-link collapsed" href="#">
             <i class="fas fa-info-circle"></i>
 
             <span class="font-weight-bold">
@@ -398,26 +316,6 @@ function Slider() {
         </li>
 
         <hr class="sidebar-divider d-none d-md-block" />
-
-        {/* <div class="sidebar-brand-text mx-5 pl-3 mr-4">
-          <li class="nav-item ">
-          <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span class="font-weight-bold">
-          <text class="text-truncate">SETTINGS</text>
-          </span>
-          </a>
-          </li>
-
-          <li class="nav-item">
-          <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-cog"></i>
-          <span class="font-weight-bold">
-                <text class="text-truncate">SIGN OUT</text>
-              </span>
-          </a>
-          </li>
-        </div>  */}
       </ul>
     </>
   );

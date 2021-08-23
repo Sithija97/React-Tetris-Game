@@ -26,9 +26,7 @@ function Card({ commonProps }) {
             style={{ marginBottom: "15px" }}
           >
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                {/* Total Sales */}
-              </div>
+              <div class="text-xs font-weight-bold text-light text-uppercase mb-1"></div>
               <div class=" mb-0 font-weight-bold text-light">
                 $ {commonProps.myProp1}
               </div>
@@ -46,9 +44,7 @@ function Card({ commonProps }) {
             style={{ marginBottom: "15px" }}
           >
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                {/* Cash */}
-              </div>
+              <div class="text-xs font-weight-bold text-light text-uppercase mb-1"></div>
               <div class=" mb-0 font-weight-bold text-light">$ CREDIT</div>
             </div>
             <div class="col-auto">
@@ -64,9 +60,7 @@ function Card({ commonProps }) {
             style={{ marginBottom: "15px" }}
           >
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                {/* Cash */}
-              </div>
+              <div class="text-xs font-weight-bold text-light text-uppercase mb-1"></div>
               <div class=" mb-0 font-weight-bold text-light">$ CHECK</div>
             </div>
             <div class="col-auto">
@@ -94,23 +88,6 @@ function Card({ commonProps }) {
             </div>
           </div>
         </span>
-      </div>
-
-      <div class="card-body">
-        <div class="chart-pie pt-4 pb-2">
-          {/* <canvas id="myPieChart"></canvas> */}
-        </div>
-        <div class="mt-4 text-center small">
-          <span class="mr-2">
-            {/* <i class="fas fa-circle text-primary"></i> Direct */}
-          </span>
-          <span class="mr-2">
-            {/* <i class="fas fa-circle text-success"></i> Social */}
-          </span>
-          <span class="mr-2">
-            {/* <i class="fas fa-circle text-info"></i> Referral */}
-          </span>
-        </div>
       </div>
     </div>
   );
