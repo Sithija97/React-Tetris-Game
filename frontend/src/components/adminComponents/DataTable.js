@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import MockData from "../../services/MOCK_DATA.json";
 
 function DataTable() {
@@ -25,7 +25,7 @@ function DataTable() {
             <th>Email</th>
             <th>Gender</th>
           </tr>
-        </thead>{" "}
+        </thead>
       </table>
       <div className="pre-scrollable">
         <table className="table table-striped table-sm">
