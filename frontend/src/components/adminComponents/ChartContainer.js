@@ -1,309 +1,59 @@
 import React from "react";
+import Card from "./Card";
 import DataTable from "./DataTable";
+import DrawerCard from "./DrawerCard";
+import ExpenseCard from "./ExpenseCard";
 import MultiAxisLine from "./MultiAxisLine";
+import SalesCard from "./SalesCard";
 
 function ChartContainer() {
+  const salesProps = {
+    value1: "21,230.00",
+    value2: "1,000,000.00",
+    value3: "1,000,000.00",
+    value4: "12.900,000.00",
+  };
+  const expenseProps = {
+    value1: "26,230.00",
+    value2: "1,000,000.00",
+    value3: "1,000,000.00",
+    value4: "8.800,000.00",
+  };
+  const drawerProps = {
+    value1: "216,230.00",
+    value2: "2,000,000.00",
+    value3: "6,000,000.00",
+    value4: "8.800,000.00",
+  };
   return (
     <>
       <div class="d-sm-flex align-items-center justify-content-between mb-2">
-        <h1 class="h3 mb-0 text-gray-900 font-weight-bold ">SALES SUMMARY</h1>
+        <h1 class="h3 mb-0 text-gray-900 font-weight-bold ">
+          Whats's Happening Today
+        </h1>
       </div>
-
 
       <div
         class="row"
         style={{ alignItems: "center", justifyContent: "center" }}
       >
         <div class="col-xl-4 col-lg-5 ">
-          <div
-            class="cardamount shadow mb-4"
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
-            }}
-          >
-            <div
-              class="card-header py-3 justify-content-between"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
-              }}
-            >
-              <h6 class="m-0 font-weight-bold text-primary text-light mb-2">
-                Today
-              </h6>
-
-              <span class="font-weight-bold">
-                {/* <text class="text-truncate text-light h3 font-weight-bold ">
-                  TOTAL SALES
-                </text> */}
-                <div
-                  class="row no-gutters align-items-center"
-                  style={{ marginBottom: "15px" }}
-                >
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Total Sales
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 40,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-briefcase fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-              <span class="font-weight-bold">
-                <div
-                  class="row no-gutters align-items-center"
-                  style={{ marginBottom: "15px" }}
-                >
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Cash
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 20,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-              <span class="font-weight-bold">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Credit
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 10,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="far fa-credit-card fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-            </div>
-
-            <div class="card-body">
-              <div class="chart-pie pt-4 pb-2">
-                {/* <canvas id="myPieChart"></canvas> */}
-              </div>
-              <div class="mt-4 text-center small">
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-primary"></i> Direct */}
-                </span>
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-success"></i> Social */}
-                </span>
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-info"></i> Referral */}
-                </span>
-              </div>
-            </div>
-          </div>
+          {/* <Card commonProps={commonProps} /> */}
+          <SalesCard salesProps={salesProps} />
         </div>
 
         <div class="col-xl-4 col-lg-5">
-          <div
-            class="cardamount shadow mb-4"
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
-            }}
-          >
-            <div
-              class="card-header py-3 justify-content-between"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
-              }}
-            >
-              <h6 class="m-0 font-weight-bold text-primary text-light mb-2">
-                Today
-              </h6>
-
-              <span class="font-weight-bold">
-                {/* <text class="text-truncate text-light h3 font-weight-bold ">
-                  TOTAL SALES
-                </text> */}
-                <div
-                  class="row no-gutters align-items-center"
-                  style={{ marginBottom: "15px" }}
-                >
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Total Sales
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 40,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-briefcase fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-              <span class="font-weight-bold">
-                <div
-                  class="row no-gutters align-items-center"
-                  style={{ marginBottom: "15px" }}
-                >
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Cash
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 20,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-              <span class="font-weight-bold">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Credit
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 10,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="far fa-credit-card fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-            </div>
-
-            <div class="card-body">
-              <div class="chart-pie pt-4 pb-2">
-                {/* <canvas id="myPieChart"></canvas> */}
-              </div>
-              <div class="mt-4 text-center small">
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-primary"></i> Direct */}
-                </span>
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-success"></i> Social */}
-                </span>
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-info"></i> Referral */}
-                </span>
-              </div>
-            </div>
-          </div>
+          <ExpenseCard expenseProps={expenseProps} />
         </div>
       </div>
       <div
-
-
         class="row"
         style={{ alignItems: "center", justifyContent: "center" }}
       >
         <div class="col-xl-7 col-lg-6">
-          <div
-            class="cardsecondamount shadow mb-4"
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
-            }}
-          >
-            <div
-              class="card-header py-3 justify-content-between"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(98,45,217,1) 0%, rgba(65,7,135,1) 100%)",
-              }}
-            >
-              <h6 class="m-0 font-weight-bold text-primary text-light mb-2">
-                Today
-              </h6>
-
-              <span class="font-weight-bold">
-                {/* <text class="text-truncate text-light h3 font-weight-bold ">
-                  TOTAL SALES
-                </text> */}
-                <div
-                  class="row no-gutters align-items-center"
-                  style={{ marginBottom: "15px" }}
-                >
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Total Sales
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 40,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-briefcase fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-              <span class="font-weight-bold">
-                <div
-                  class="row no-gutters align-items-center"
-                  style={{ marginBottom: "15px" }}
-                >
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Cash
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 20,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-              <span class="font-weight-bold">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-light text-uppercase mb-1">
-                      Credit
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-light">
-                      $ 10,000
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="far fa-credit-card fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </span>
-            </div>
-
-            <div class="card-body">
-              <div class="chart-pie pt-4 pb-2">
-                {/* <canvas id="myPieChart"></canvas> */}
-              </div>
-              <div class="mt-4 text-center small">
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-primary"></i> Direct */}
-                </span>
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-success"></i> Social */}
-                </span>
-                <span class="mr-2">
-                  {/* <i class="fas fa-circle text-info"></i> Referral */}
-                </span>
-              </div>
-            </div>
-          </div>
+          <DrawerCard drawerProps={drawerProps} />
         </div>
       </div>
-
-      
 
       <div class="d-sm-flex align-items-center justify-content-between mb-2">
         <h1 class="h3 mb-0 text-gray-900 font-weight-bold ">SALES SUMMARY</h1>
@@ -320,7 +70,7 @@ function ChartContainer() {
             <div class="card-body">
               <div
                 class="chart-area"
-                style={{bottom:"65px", width:"80%", height:"80%"}}
+                style={{ bottom: "65px", width: "80%", height: "80%" }}
               >
                 {/* <canvas id="myAreaChart"></canvas> */}
                 <MultiAxisLine />
@@ -375,10 +125,7 @@ function ChartContainer() {
             </div>
 
             <div class="card-body">
-              <div
-                class="chart-area"
-                style={{bottom:"50px", width:"80%" }}
-              >
+              <div class="chart-area" style={{ bottom: "50px", width: "80%" }}>
                 {/* <canvas id="myAreaChart"></canvas> */}
                 <div class="table-responsive ">
                   <DataTable />
