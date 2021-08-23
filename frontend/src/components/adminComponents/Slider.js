@@ -4,22 +4,22 @@ function Slider() {
   return (
     <>
       <ul
-        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
         id="accordionSidebar"
       >
         <a
-          class="sidebar-brand d-flex align-items-center justify-content-center"
+          className="sidebar-brand d-flex align-items-center justify-content-center"
           href="index.html"
         >
-          <div class="sidebar-brand-icon align-items-center justify-content-center mx-4 pr-2">
+          <div className="sidebar-brand-icon align-items-center justify-content-center mx-4 pr-2">
             <img src="img/logo.png" alt="" className="img-fluid" />
           </div>
         </a>
 
-        <hr class="sidebar-divider my-0" />
-        <li class="nav-item">
+        <hr className="sidebar-divider my-0" />
+        <li className="nav-item">
           <a
-            class="nav-link collapsed"
+            className="nav-link collapsed"
             href="#"
             data-toggle="collapse"
             data-target="#collapseUser"
@@ -27,210 +27,210 @@ function Slider() {
             aria-controls="collapseUser"
           >
             <img
-              class="img-profile rounded-circle mr-2"
+              className="img-profile rounded-circle mr-2"
               src="img/undraw_profile.svg"
             />
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">Keerthanan</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">Keerthanan</text>
             </span>
           </a>
           <div
             id="collapseUser"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Sales Details:</h6>
-              <a class="dropdown-item" href="#">
-                <i class="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
-                <text class="text-gray-700">Profile</text>
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Sales Details:</h6>
+              <a className="dropdown-item" href="#">
+                <i className="fas fa-user fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text className="text-gray-700">Profile</text>
               </a>
-              <a class="dropdown-item" href="#">
-                <i class="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
-                <text class="text-gray-700">Settings</text>
+              <a className="dropdown-item" href="#">
+                <i className="fas fa-cogs fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text className="text-gray-700">Settings</text>
               </a>
-              <a class="dropdown-item" href="#">
-                <i class="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
-                <text class="text-gray-700">Activity Log</text>
+              <a className="dropdown-item" href="#">
+                <i className="fas fa-list fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text className="text-gray-700">Activity Log</text>
               </a>
-              <div class="dropdown-divider"></div>
+              <div className="dropdown-divider"></div>
               <a
-                class="dropdown-item"
+                className="dropdown-item"
                 href="#"
                 data-toggle="modal"
                 data-target="#logoutModal"
               >
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
-                <text class="text-gray-700">Logout</text>
+                <i className="fas fa-sign-out-alt fa-sm fa-fw mr-5 text-gray-700"></i>
+                <text className="text-gray-700">Logout</text>
               </a>
             </div>
           </div>
         </li>
 
-        <hr class="sidebar-divider" />
+        <hr className="sidebar-divider" />
 
-        <div class="sidebar-heading">Informations</div>
+        <div className="sidebar-heading">Informations</div>
 
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-            <i class="fas fa-laugh-wink"></i>
+        <li className="nav-item">
+          <a className="nav-link collapsed" href="#">
+            <i className="fas fa-laugh-wink"></i>
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">PORTFOLIO</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">PORTFOLIO</text>
             </span>
           </a>
           <div
             id="collapseTwo"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingTwo"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Custom Components:</h6>
-              <a class="collapse-item" href="buttons.html">
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Custom Components:</h6>
+              <a className="collapse-item" href="buttons.html">
                 Buttons
               </a>
-              <a class="collapse-item" href="cards.html">
+              <a className="collapse-item" href="cards.html">
                 Cards
               </a>
             </div>
           </div>
         </li>
 
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link collapsed"
+            className="nav-link collapsed"
             href="#"
             data-toggle="collapse"
             data-target="#collapseUtilities"
             aria-expanded="true"
             aria-controls="collapseUtilities"
           >
-            <i class="fas fa-fw fa-table"></i>
+            <i className="fas fa-fw fa-table"></i>
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">INVENTORY</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">INVENTORY</text>
             </span>
           </a>
           <div
             id="collapseUtilities"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Custom Inventories:</h6>
-              <a class="collapse-item" href="utilities-color.html">
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Custom Inventories:</h6>
+              <a className="collapse-item" href="utilities-color.html">
                 Stocks
               </a>
             </div>
           </div>
         </li>
 
-        <hr class="sidebar-divider" />
+        <hr className="sidebar-divider" />
 
-        <div class="sidebar-heading">SUMMARY</div>
+        <div className="sidebar-heading">SUMMARY</div>
 
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link collapsed"
+            className="nav-link collapsed"
             // href="#"
             data-toggle="collapse"
             data-target="#collapseSales"
             aria-expanded="true"
             aria-controls="collapseSales"
           >
-            <i class="fas fa-fw fa-folder"></i>
+            <i className="fas fa-fw fa-folder"></i>
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">SALES</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">SALES</text>
             </span>
           </a>
           <div
             id="collapseSales"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Sales Details:</h6>
-              <a class="collapse-item font-weight-bold" href="login.html">
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Sales Details:</h6>
+              <a className="collapse-item font-weight-bold" href="login.html">
                 Details
               </a>
-              <a class="collapse-item font-weight-bold" href="register.html">
+              <a className="collapse-item font-weight-bold" href="register.html">
                 Credit Sales
               </a>
             </div>
           </div>
         </li>
 
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link collapsed"
+            className="nav-link collapsed"
             // href="#"
             data-toggle="collapse"
             data-target="#collapsePurchase"
             aria-expanded="true"
             aria-controls="collapsePurchase"
           >
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i className="fas fa-fw fa-chart-area"></i>
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">PURCHASE</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">PURCHASE</text>
             </span>
           </a>
           <div
             id="collapsePurchase"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Purchase Details:</h6>
-              <a class="collapse-item font-weight-bold" href="login.html">
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Purchase Details:</h6>
+              <a className="collapse-item font-weight-bold" href="login.html">
                 Details
               </a>
-              <a class="collapse-item font-weight-bold" href="register.html">
+              <a className="collapse-item font-weight-bold" href="register.html">
                 History
               </a>
-              <div class="collapse-divider"></div>
+              <div className="collapse-divider"></div>
             </div>
           </div>
         </li>
 
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link collapsed"
+            className="nav-link collapsed"
             href="#"
             data-toggle="collapse"
             data-target="#collapseAcc"
             aria-expanded="true"
             aria-controls="collapseAcc"
           >
-            <i class="fas fa-donate "></i>
+            <i className="fas fa-donate "></i>
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">ACCOUNTING</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">ACCOUNTING</text>
             </span>
           </a>
           <div
             id="collapseAcc"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Accounts Details:</h6>
-              <a class="collapse-item font-weight-bold" href="login.html">
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Accounts Details:</h6>
+              <a className="collapse-item font-weight-bold" href="login.html">
                 Sales
               </a>
-              <a class="collapse-item font-weight-bold" href="register.html">
+              <a className="collapse-item font-weight-bold" href="register.html">
                 Purchase
               </a>
               <a
-                class="collapse-item font-weight-bold"
+                className="collapse-item font-weight-bold"
                 href="forgot-password.html"
               >
                 Other Reports
@@ -239,37 +239,37 @@ function Slider() {
           </div>
         </li>
 
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link collapsed"
+            className="nav-link collapsed"
             href="#"
             data-toggle="collapse"
             data-target="#collapsestk"
             aria-expanded="true"
             aria-controls="collapsestk"
           >
-            <i class="fas fa-flag"></i>
+            <i className="fas fa-flag"></i>
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">STAKEHOLDERS</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">STAKEHOLDERS</text>
             </span>
           </a>
           <div
             id="collapsestk"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Monitize Informations:</h6>
-              <a class="collapse-item font-weight-bold" href="login.html">
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Monitize Informations:</h6>
+              <a className="collapse-item font-weight-bold" href="login.html">
                 Suppliers
               </a>
-              <a class="collapse-item font-weight-bold" href="register.html">
+              <a className="collapse-item font-weight-bold" href="register.html">
                 Customers
               </a>
               <a
-                class="collapse-item font-weight-bold"
+                className="collapse-item font-weight-bold"
                 href="forgot-password.html"
               >
                 Collaborators
@@ -278,44 +278,44 @@ function Slider() {
           </div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-            <i class="fas fa-info-circle"></i>
+        <li className="nav-item">
+          <a className="nav-link collapsed" href="#">
+            <i className="fas fa-info-circle"></i>
 
-            <span class="font-weight-bold">
-              <text class="text-truncate">PRODUCT TREE</text>
+            <span className="font-weight-bold">
+              <text className="text-truncate">PRODUCT TREE</text>
             </span>
           </a>
           <div
             id="collapseProtree"
-            class="collapse"
+            className="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Login Screens:</h6>
-              <a class="collapse-item" href="login.html">
+            <div className="bg-white py-2 collapse-inner rounded">
+              <h6 className="collapse-header">Login Screens:</h6>
+              <a className="collapse-item" href="login.html">
                 Login
               </a>
-              <a class="collapse-item" href="register.html">
+              <a className="collapse-item" href="register.html">
                 Register
               </a>
-              <a class="collapse-item" href="forgot-password.html">
+              <a className="collapse-item" href="forgot-password.html">
                 Forgot Password
               </a>
-              <div class="collapse-divider"></div>
-              <h6 class="collapse-header">Other Pages:</h6>
-              <a class="collapse-item" href="404.html">
+              <div className="collapse-divider"></div>
+              <h6 className="collapse-header">Other Pages:</h6>
+              <a className="collapse-item" href="404.html">
                 404 Page
               </a>
-              <a class="collapse-item" href="blank.html">
+              <a className="collapse-item" href="blank.html">
                 Blank Page
               </a>
             </div>
           </div>
         </li>
 
-        <hr class="sidebar-divider d-none d-md-block" />
+        <hr className="sidebar-divider d-none d-md-block" />
       </ul>
     </>
   );

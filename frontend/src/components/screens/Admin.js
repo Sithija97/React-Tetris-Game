@@ -1,5 +1,4 @@
 import React from "react";
-import CardsSection from "../adminComponents/CardsSection";
 import ChartContainer from "../adminComponents/ChartContainer";
 import NavBar from "../adminComponents/NavBar";
 import Slider from "../adminComponents/Slider";
@@ -10,7 +9,7 @@ function Admin() {
       <body>
         <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
         <label
-          for="drawer-toggle"
+          htmlFor="drawer-toggle"
           id="drawer-toggle-label"
           style={{ top: "30px", marginLeft: "30px" }}
         ></label>
@@ -20,11 +19,11 @@ function Admin() {
         <div id="page-content">
           <div id="wrapper">
             <Slider />
-            <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content-wrapper" className="d-flex flex-column">
               <div id="content">
                 <NavBar />
                 <div
-                  class="container-fluid"
+                  className="container-fluid"
                   style={{
                     height: "100vh",
                     overflow: "scroll",
@@ -40,11 +39,11 @@ function Admin() {
       <body id="page-top">
         <div id="wrapper">
           <Slider />
-          <div id="content-wrapper" class="d-flex flex-column">
+          <div id="content-wrapper" className="d-flex flex-column">
             <div id="content">
               <NavBar />
               <div
-                class="container-fluid"
+                className="container-fluid"
                 style={{
                   height: "100vh",
                   overflow: "scroll",
