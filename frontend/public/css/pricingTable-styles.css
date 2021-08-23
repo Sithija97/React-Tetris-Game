@@ -17,7 +17,7 @@ body {
   padding: 2.25rem 0;
   position: relative;
   will-change: transform;
-  height: 350px;
+height: 400px;
 }
 .card:after {
   content: "";
@@ -86,4 +86,31 @@ body {
 .btn-gradient:hover {
   color: white;
   background-color: #5788e2;
+}
+
+
+.cardamount {
+  border: 0;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  padding: 2.25rem 0;
+  position: relative;
+  will-change: transform;
+height: 300px;
+}
+
+
+.cardsecondamount {
+  border: 0;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  padding: 2.25rem 0;
+  position: relative;
+  will-change: transform;
+height: 300px;
+
 }
