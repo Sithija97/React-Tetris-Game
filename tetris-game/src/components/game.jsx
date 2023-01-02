@@ -1,15 +1,23 @@
 import React from "react";
+import { useGameOver } from "../hooks/useGameOver";
 import Menu from "./menu";
 
 const Game = ({ rows, columns }) => {
 
-    // const [gameOver, setGameOver, resetGameOver]
+    const [gameOver, setGameOver, resetGameOver] = useGameOver()
 
-    const start = () => { console.log('start'); }
+    const start = () => {
+        resetGameOver();
+        console.log(`start game over is ${gameOver}`);
+    }
 
     return (
         <div className="Game">
-            <Menu onClick={start} />
+            {gameOver ? (
+                <Menu onClick={start} />
+            ) : (
+                <p>Tetris</p>
+            )}
         </div>
     )
 }
