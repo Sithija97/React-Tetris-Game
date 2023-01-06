@@ -1,6 +1,7 @@
 import React from "react";
 import { useGameOver } from "../hooks/useGameOver";
 import Menu from "./menu";
+import Tetris from "./tetris";
 
 const Game = ({ rows, columns }) => {
 
@@ -16,7 +17,7 @@ const Game = ({ rows, columns }) => {
             {gameOver ? (
                 <Menu onClick={start} />
             ) : (
-                <p>Tetris</p>
+                <Tetris rows={rows} columns={columns} setGameOver={setGameOver}/>
             )}
         </div>
     )
