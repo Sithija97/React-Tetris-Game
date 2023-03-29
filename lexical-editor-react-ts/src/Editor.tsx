@@ -20,6 +20,7 @@ import { TRANSFORMERS } from "@lexical/markdown";
 import ToolbarPlugin from "./plugins/ToolbarPlugin";
 import initialBody from "./json/initialBody.json";
 import initialSubject from "./json/initialSubject.json";
+import TestPlugin from "./plugins/TestPlugin";
 
 // import TreeViewPlugin from "./plugins/TreeViewPlugin";
 // import ToolbarPlugin from "./plugins/ToolbarPlugin";
@@ -75,6 +76,7 @@ const Editor = () => {
           <LinkPlugin />
         </div>
       </div>
+      <TestPlugin />
     </LexicalComposer>
   );
 };
