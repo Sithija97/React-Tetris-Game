@@ -1,5 +1,5 @@
 import Editor from "./Editor";
-import "./index.css";
+import "./index.scss";
 
 function App() {
   return (

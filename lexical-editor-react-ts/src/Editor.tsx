@@ -18,6 +18,8 @@ import { CodeHighlightNode, CodeNode } from "@lexical/code";
 import { AutoLinkNode, LinkNode } from "@lexical/link";
 import { TRANSFORMERS } from "@lexical/markdown";
 import ToolbarPlugin from "./plugins/ToolbarPlugin";
+import initialBody from "./json/initialBody.json";
+import initialSubject from "./json/initialSubject.json";
 
 // import TreeViewPlugin from "./plugins/TreeViewPlugin";
 // import ToolbarPlugin from "./plugins/ToolbarPlugin";
@@ -29,10 +31,13 @@ function Placeholder() {
   return <div className="editor-placeholder">Enter some rich text...</div>;
 }
 
+const EMPTY_CONTENT = JSON.stringify(initialSubject);
+
 const editorConfig = {
   namespace: "MyEditor",
   // The editor theme
   theme: ExampleTheme,
+  editorState: EMPTY_CONTENT,
   // Handling of errors during update
   onError(error: any) {
     throw error;
