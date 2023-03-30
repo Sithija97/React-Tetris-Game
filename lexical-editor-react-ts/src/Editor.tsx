@@ -18,9 +18,7 @@ import { CodeHighlightNode, CodeNode } from "@lexical/code";
 import { AutoLinkNode, LinkNode } from "@lexical/link";
 import { TRANSFORMERS } from "@lexical/markdown";
 import ToolbarPlugin from "./plugins/ToolbarPlugin";
-import initialBody from "./json/initialBody.json";
-import initialSubject from "./json/initialSubject.json";
-import TestPlugin from "./plugins/TestPlugin";
+import MentionsPlugin from "./plugins/MentionsPlugin";
 import { $createParagraphNode, $createTextNode, $getRoot } from "lexical";
 
 // import TreeViewPlugin from "./plugins/TreeViewPlugin";
@@ -87,6 +85,7 @@ const Editor = () => {
     <LexicalComposer initialConfig={editorConfig}>
       <div className="editor-container">
         <ToolbarPlugin />
+        <MentionsPlugin />
         <div className="editor-inner">
           <RichTextPlugin
             contentEditable={<ContentEditable className="editor-input" />}
@@ -99,7 +98,6 @@ const Editor = () => {
           <LinkPlugin />
         </div>
       </div>
-      <TestPlugin />
     </LexicalComposer>
   );
 };
