@@ -9,7 +9,7 @@ import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
 import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary";
 import { LinkPlugin } from "@lexical/react/LexicalLinkPlugin";
 import { ListPlugin } from "@lexical/react/LexicalListPlugin";
-import { MarkdownShortcutPlugin } from "@lexical/react/LexicalMarkdownShortcutPlugin";
+import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 
 import { HeadingNode, QuoteNode } from "@lexical/rich-text";
 import { TableCellNode, TableNode, TableRowNode } from "@lexical/table";
@@ -19,7 +19,14 @@ import { AutoLinkNode, LinkNode } from "@lexical/link";
 import { TRANSFORMERS } from "@lexical/markdown";
 import ToolbarPlugin from "./plugins/ToolbarPlugin";
 import MentionsPlugin from "./plugins/MentionsPlugin";
-import { $createParagraphNode, $createTextNode, $getRoot } from "lexical";
+import {
+  $createParagraphNode,
+  $createTextNode,
+  $getRoot,
+  EditorState,
+} from "lexical";
+import { MentionNode } from "./nodes/MentionNode";
+import TestPlugin from "./plugins/TestPlugin";
 
 // import TreeViewPlugin from "./plugins/TreeViewPlugin";
 // import ToolbarPlugin from "./plugins/ToolbarPlugin";
@@ -77,7 +84,12 @@ const editorConfig = {
     TableRowNode,
     AutoLinkNode,
     LinkNode,
+    MentionNode,
   ],
+};
+
+const onChange = (editorState: EditorState) => {
+  console.log(editorState.toJSON().root.children);
 };
 
 const Editor = () => {
@@ -96,8 +108,10 @@ const Editor = () => {
           <AutoFocusPlugin />
           <ListPlugin />
           <LinkPlugin />
+          <OnChangePlugin onChange={onChange} />
         </div>
       </div>
+      <TestPlugin />
     </LexicalComposer>
   );
 };

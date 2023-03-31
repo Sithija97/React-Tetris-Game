@@ -530,7 +530,7 @@ export default function ToolbarPlugin(): JSX.Element {
 
   return (
     <div className="toolbar">
-      <button
+      {/* <button
         disabled={!canUndo || !isEditable}
         onClick={() => {
           activeEditor.dispatchCommand(UNDO_COMMAND, undefined);
@@ -553,15 +553,15 @@ export default function ToolbarPlugin(): JSX.Element {
         aria-label="Redo"
       >
         <i className="format redo" />
-      </button>
+      </button> */}
       <Divider />
       {blockType in blockTypeToBlockName && activeEditor === editor && (
         <>
-          <BlockFormatDropDown
+          {/* <BlockFormatDropDown
             disabled={!isEditable}
             blockType={blockType}
             editor={editor}
-          />
+          /> */}
           <Divider />
         </>
       )}
@@ -590,7 +590,7 @@ export default function ToolbarPlugin(): JSX.Element {
         </>
       ) : (
         <>
-          <FontDropDown
+          {/* <FontDropDown
             disabled={!isEditable}
             style={"font-family"}
             value={fontFamily}
@@ -601,7 +601,7 @@ export default function ToolbarPlugin(): JSX.Element {
             style={"font-size"}
             value={fontSize}
             editor={editor}
-          />
+          /> */}
           <button
             disabled={!isEditable}
             onClick={() => {
@@ -712,6 +712,16 @@ export default function ToolbarPlugin(): JSX.Element {
             </DropDownItem>
             <Divider />
           </DropDown>
+          <button
+            disabled={!isEditable}
+            // onClick={}
+            className={"toolbar-item spaced " + (isLink ? "active" : "")}
+            aria-label="Insert bracket"
+            title="Insert bracket"
+            type="button"
+          >
+            <span className="text">Legg til variabel </span>
+          </button>
         </>
       )}
     </div>
