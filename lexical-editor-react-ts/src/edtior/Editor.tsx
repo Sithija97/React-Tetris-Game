@@ -1,6 +1,6 @@
 import React from "react";
 
-import ExampleTheme from "./themes/ExampleTheme";
+import ExampleTheme from "../themes/ExampleTheme";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
@@ -17,16 +17,17 @@ import { ListItemNode, ListNode } from "@lexical/list";
 import { CodeHighlightNode, CodeNode } from "@lexical/code";
 import { AutoLinkNode, LinkNode } from "@lexical/link";
 import { TRANSFORMERS } from "@lexical/markdown";
-import ToolbarPlugin from "./plugins/ToolbarPlugin";
-import MentionsPlugin from "./plugins/MentionsPlugin";
+import ToolbarPlugin from "../plugins/ToolbarPlugin";
+import MentionsPlugin from "../plugins/MentionsPlugin";
 import {
   $createParagraphNode,
   $createTextNode,
   $getRoot,
   EditorState,
 } from "lexical";
-import { MentionNode } from "./nodes/MentionNode";
-import TestPlugin from "./plugins/TestPlugin";
+import { MentionNode } from "../nodes/MentionNode";
+import TestPlugin from "../plugins/TestPlugin";
+import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 
 // import TreeViewPlugin from "./plugins/TreeViewPlugin";
 // import ToolbarPlugin from "./plugins/ToolbarPlugin";
@@ -88,31 +89,44 @@ const editorConfig = {
   ],
 };
 
-const onChange = (editorState: EditorState) => {
-  console.log(editorState.toJSON().root.children);
-};
+interface IProps {
+  initialValue: string;
+  setValue: (value: string) => void;
+}
 
-const Editor = () => {
+const Editor = ({ initialValue, setValue }: IProps) => {
+  const [editor] = useLexicalComposerContext();
+
+  const onChange = (editorState: EditorState) => {
+    const stringifiedEditorState = JSON.stringify(editorState.toJSON());
+    const parsedEditorState = editor.parseEditorState(stringifiedEditorState);
+    const editorStateTextString = parsedEditorState.read(() =>
+      $getRoot().getTextContent()
+    );
+    setValue(editorStateTextString);
+    // console.log(editorStateTextString);
+  };
+
   return (
-    <LexicalComposer initialConfig={editorConfig}>
-      <div className="editor-container">
-        <ToolbarPlugin />
-        <MentionsPlugin />
-        <div className="editor-inner">
-          <RichTextPlugin
-            contentEditable={<ContentEditable className="editor-input" />}
-            placeholder={<Placeholder />}
-            ErrorBoundary={LexicalErrorBoundary}
-          />
-          <HistoryPlugin />
-          <AutoFocusPlugin />
-          <ListPlugin />
-          <LinkPlugin />
-          <OnChangePlugin onChange={onChange} />
-        </div>
+    // <LexicalComposer initialConfig={editorConfig}>
+    <div className="editor-container">
+      <ToolbarPlugin />
+      <MentionsPlugin />
+      <div className="editor-inner">
+        <RichTextPlugin
+          contentEditable={<ContentEditable className="editor-input" />}
+          placeholder={<Placeholder />}
+          ErrorBoundary={LexicalErrorBoundary}
+        />
+        <HistoryPlugin />
+        <AutoFocusPlugin />
+        <ListPlugin />
+        <LinkPlugin />
+        <OnChangePlugin onChange={onChange} />
       </div>
-      <TestPlugin />
-    </LexicalComposer>
+    </div>
+    // <TestPlugin />
+    // </LexicalComposer>
   );
 };
 
