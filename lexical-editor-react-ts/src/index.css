@@ -849,3 +849,7 @@ i.justify-align {
 .mentions-menu {
   width: 250px;
 }
+
+.plain-text-wrapper {
+  display: flex;
+}

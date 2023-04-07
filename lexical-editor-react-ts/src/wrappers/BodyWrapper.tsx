@@ -1,7 +1,7 @@
 import React from "react";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { $getRoot, $createParagraphNode, $createTextNode } from "lexical";
-import Editor from "../edtior/Editor";
+import { RichTextEditor } from "../edtior/Editor";
 import { MentionNode } from "../nodes/MentionNode";
 import ExampleTheme from "../themes/ExampleTheme";
 
@@ -68,7 +68,7 @@ interface IProps {
 const BodyWrapper = ({ initialValue, setValue }: IProps) => {
   return (
     <LexicalComposer initialConfig={editorConfig}>
-      <Editor initialValue={initialValue} setValue={setValue} />
+      <RichTextEditor initialValue={initialValue} setValue={setValue} />
     </LexicalComposer>
   );
 };

@@ -18,7 +18,7 @@ function App() {
       <p>Note: this is an experimental build of Lexical</p>
 
       <SubjectWrapper initialValue="" setValue={setSubject} />
-      <BodyWrapper initialValue="" setValue={setBody} />
+      {/* <BodyWrapper initialValue="" setValue={setBody} /> */}
 
       <div className="other">
         <button onClick={handleSubmit}>Send email</button>

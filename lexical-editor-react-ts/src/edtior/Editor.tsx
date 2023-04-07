@@ -3,6 +3,7 @@ import React from "react";
 import ExampleTheme from "../themes/ExampleTheme";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
+import { PlainTextPlugin } from "@lexical/react/LexicalPlainTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
@@ -94,7 +95,7 @@ interface IProps {
   setValue: (value: string) => void;
 }
 
-const Editor = ({ initialValue, setValue }: IProps) => {
+const RichTextEditor = ({ initialValue, setValue }: IProps) => {
   const [editor] = useLexicalComposerContext();
 
   const onChange = (editorState: EditorState) => {
@@ -104,14 +105,13 @@ const Editor = ({ initialValue, setValue }: IProps) => {
       $getRoot().getTextContent()
     );
     setValue(editorStateTextString);
-    // console.log(editorStateTextString);
   };
 
   return (
-    // <LexicalComposer initialConfig={editorConfig}>
     <div className="editor-container">
       <ToolbarPlugin />
       <MentionsPlugin />
+      <TestPlugin />
       <div className="editor-inner">
         <RichTextPlugin
           contentEditable={<ContentEditable className="editor-input" />}
@@ -125,9 +125,43 @@ const Editor = ({ initialValue, setValue }: IProps) => {
         <OnChangePlugin onChange={onChange} />
       </div>
     </div>
-    // <TestPlugin />
-    // </LexicalComposer>
   );
 };
 
-export default Editor;
+export { RichTextEditor };
+
+const PlainTextEditor = ({ initialValue, setValue }: IProps) => {
+  const [editor] = useLexicalComposerContext();
+
+  const onChange = (editorState: EditorState) => {
+    const stringifiedEditorState = JSON.stringify(editorState.toJSON());
+    const parsedEditorState = editor.parseEditorState(stringifiedEditorState);
+    const editorStateTextString = parsedEditorState.read(() =>
+      $getRoot().getTextContent()
+    );
+    setValue(editorStateTextString);
+  };
+
+  return (
+    <div className="editor-container">
+      <MentionsPlugin />
+      <div className="plain-text-wrapper">
+        <div className="editor-inner">
+          <PlainTextPlugin
+            contentEditable={<ContentEditable className="editor-input" />}
+            placeholder={<Placeholder />}
+            ErrorBoundary={LexicalErrorBoundary}
+          />
+          <HistoryPlugin />
+          <AutoFocusPlugin />
+          <ListPlugin />
+          <LinkPlugin />
+          <OnChangePlugin onChange={onChange} />
+        </div>
+        <TestPlugin />
+      </div>
+    </div>
+  );
+};
+
+export { PlainTextEditor };
