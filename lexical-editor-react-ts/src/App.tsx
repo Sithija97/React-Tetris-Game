@@ -17,8 +17,8 @@ function App() {
       <h1>Rich Text Example</h1>
       <p>Note: this is an experimental build of Lexical</p>
 
-      <SubjectWrapper initialValue="" setValue={setSubject} />
-      {/* <BodyWrapper initialValue="" setValue={setBody} /> */}
+      {/* <SubjectWrapper initialValue="" setValue={setSubject} /> */}
+      <BodyWrapper initialValue="" setValue={setBody} />
 
       <div className="other">
         <button onClick={handleSubmit}>Send email</button>

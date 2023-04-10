@@ -111,7 +111,7 @@ const RichTextEditor = ({ initialValue, setValue }: IProps) => {
     <div className="editor-container">
       <ToolbarPlugin />
       <MentionsPlugin />
-      <TestPlugin />
+      {/* <TestPlugin /> */}
       <div className="editor-inner">
         <RichTextPlugin
           contentEditable={<ContentEditable className="editor-input" />}
