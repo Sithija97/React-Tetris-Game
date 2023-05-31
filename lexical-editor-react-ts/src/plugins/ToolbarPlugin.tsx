@@ -557,11 +557,11 @@ export default function ToolbarPlugin(): JSX.Element {
       <Divider />
       {blockType in blockTypeToBlockName && activeEditor === editor && (
         <>
-          {/* <BlockFormatDropDown
+          <BlockFormatDropDown
             disabled={!isEditable}
             blockType={blockType}
             editor={editor}
-          /> */}
+          />
           <Divider />
         </>
       )}
