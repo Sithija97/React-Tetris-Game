@@ -29,6 +29,7 @@ import {
 import { MentionNode } from "../nodes/MentionNode";
 import TestPlugin from "../plugins/TestPlugin";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
+import CustomMentionsPlugin from "../plugins/CustomMentionsPlugin";
 
 // import TreeViewPlugin from "./plugins/TreeViewPlugin";
 // import ToolbarPlugin from "./plugins/ToolbarPlugin";
@@ -111,7 +112,7 @@ const RichTextEditor = ({ initialValue, setValue }: IProps) => {
     <div className="editor-container">
       <ToolbarPlugin />
       <MentionsPlugin />
-      {/* <TestPlugin /> */}
+      <CustomMentionsPlugin />
       <div className="editor-inner">
         <RichTextPlugin
           contentEditable={<ContentEditable className="editor-input" />}
